@@ -1,0 +1,2736 @@
+version: "2.0"
+
+nlu:
+- intent: start
+  examples: |
+    - hello
+    - hey
+    - hi
+    - good morning
+    - good evening
+    - morning
+    - mornin
+    - morn
+    - yo
+    - wassup
+    - whats up
+    - what's up
+    - hello there
+    - hey there
+    - how are you
+    - how r u
+    - nice to meet you
+    - nice to meet u
+    - nice 2 meet u
+    - hi there
+    - hihi
+    - sup
+    - Hello
+    - hello bot
+    - hello there
+    - Hello my friend
+    - Hello there
+    - Hey caring bot
+    - Hey friendly bot
+    - Ahoy
+    - Hey it's you!
+    - Hail!
+    - Hey pal
+    - Hey professional bot
+    - Hey there
+    - Hey there bot
+    - Hey there buddy
+    - Hey there pal
+    - Hey homie
+    - Greetings and salutations
+    - Ahoy there
+    - Aloha
+    - Aloha bot
+    - Bonjour
+    - G'day
+    - Good day
+    - Hailing the bot
+    - Greetings
+    - Hailing Bot
+    - Greetings bot
+    - Greetings caring bot
+    - Greetings friend
+    - Greetings friendly bot
+    - Greetings professional bot
+    - Greetings witty bot
+    - Heya
+    - Good tidings
+    - Well hello
+    - Hey witty bot
+    - Oh, hello
+    - Open a channel
+    - Open a hailing channel
+    - Open a hailing frequency
+    - Salutations
+    - Oh hey, it's you
+    - Shalom
+    - Oh hey there
+    - Well hey there
+    - Well hi
+    - Well hi there
+    - Well howdy
+    - Yo
+    - Yo dude
+    - Yo man
+    - Salutations!
+    - Hi witty bot
+    - Yo my dude
+    - Hey-hey
+    - Hi
+    - Hi bot
+    - Hi caring bot
+    - Hi friendly bot
+    - Oh howdy there
+    - Hi there!
+    - Hey you
+    - Hiya
+    - Hi-ya
+    - Howdy
+    - Howdy partner
+    - Oh hello
+    - Oh hello there
+    - Oh hey amigo
+    - Hi professional bot
+    - Start
+    - Restart
+    - Hi puddle
+    - Hello puddle
+    - Yo puddle
+    - whats up puddle
+    - yoz puddle
+    - sup puddle
+    - yo wassup
+    - eh sup
+    - whatsip
+    - heyyo
+    - puddle
+    - supp puddle
+    
+- intent: menu
+  examples: |
+    - menu
+    - Menu
+    - Show me the menu
+    - options
+    - Show me the options
+    - i need advise
+    - i need advice
+
+- intent: sample_questions
+  examples: |
+    - what should i ask
+    - any example questions
+    - any sample questions
+    - i can't think of any questions
+    - i have a lot of questions
+    - i have no idea what to ask
+    - what can you do
+    - what to ask
+    - ask what
+    - what should i say
+    
+- intent: goodbye
+  examples: |
+    - bye
+    - byebye
+    - bye bye
+    - goodbye
+    - good bye
+    - byee
+    - byeee
+    - byebyee
+    - see you
+    - see u
+    - see u later
+    - see you later
+    - cu
+    - cyu
+    - cya
+    - later
+    - laterz
+    - laters
+    - ciao
+    - catch you later
+    - catch u later
+    - I have to run
+    - I have to run now
+    - I have to scoot
+    - I have to scoot now
+    - I gotta sign out now
+    - I have to sign off now
+    - I have to log out
+    - I have to sign out now
+    - I have to skedaddle
+    - I have to skedaddle now
+    - I have to take off
+    - I have to take off now
+    - I must depart
+    - I have to sign off
+    - I have to jet
+    - Adieu
+    - I gotta skedaddle now
+    - I gotta take off
+    - I gotta take off now
+    - I have to get going
+    - I have to get going now
+    - I have to motor
+    - I have to go now
+    - I have to log out now
+    - I have to jet now
+    - I have to leave
+    - I have to leave now
+    - I have to log off
+    - I have to log off now
+    - I need to go
+    - I have to go
+    - I will take my leave of you
+    - I need to get going
+    - I need to sign out
+    - I need to sign out now
+    - I need to skedaddle
+    - I need to skedaddle now
+    - I need to take off
+    - I need to sign off
+    - I should be going
+    - I need to scoot now
+    - I'd better go
+    - I'll chat with you later
+    - I'll talk to you later
+    - I'm about to get going
+    - I'm about to get going now
+    - I'm about to go
+    - I need to take off now
+    - I need to log out
+    - I gotta sign out
+    - I need to go now
+    - I need to jet
+    - I need to jet now
+    - I need to leave
+    - I need to leave now
+    - I need to sign off now
+    - I need to log off now
+    - I need to get going now
+    - I need to log out now
+    - I need to motor
+    - I need to motor now
+    - I need to run
+    - I need to run now
+    - I need to scoot
+    - I need to log off
+    - I am jetting now
+    - Goodbye
+    - Gotta go
+    - I am going
+    - I am going now
+    - I am going to get going
+    - I gotta skedaddle
+    - I am jetting
+    - Farewell
+    - I am leaving
+    - I am leaving now
+    - I am logging off
+    - I am logging off now
+    - I am logging out
+    - I am logging out now
+    - I am going to get going now
+    - Catch you on the flip side
+    - Adios
+    - Alright, I'm outta here
+    - Buh bye
+    - Bye
+    - Bye bye
+    - Bye dude
+    - Good bye
+    - Catch you later
+    - G2G
+    - Check you later
+    - Ciao
+    - CYA
+    - C-ya
+    - Fare thee well
+    - I am running off
+    - Catch ya later
+    - I gotta motor now
+    - I am motoring
+    - I gotta leave
+    - I gotta leave now
+    - I gotta log off
+    - I gotta log off now
+    - I gotta log out
+    - I gotta jet
+    - I gotta motor
+    - I gotta go now
+    - I gotta run
+    - I gotta run now
+    - I gotta scoot
+    - I gotta scoot now
+    - I gotta sign off
+    - I gotta sign off now
+    - I gotta log out now
+    - I am skedaddling
+    - I'm about to jet now
+    - I am running off now
+    - I am scooting
+    - I am scooting now
+    - I am signing off
+    - I am signing off now
+    - I gotta jet now
+    - I am signing out now
+    - I am motoring now
+    - I am skedaddling now
+    - I am taking off
+    - I am taking off now
+    - I gotta get going
+    - I gotta get going now
+    - I gotta go
+    - I am signing out
+    - I'm scooting
+    - I'm off
+    - I'm out
+    - I'm out of here
+    - I'm out the door
+    - I'm outta here
+    - I'm about to go now
+    - I'm running off now
+    - I'm logging out now
+    - I'm scooting now
+    - I'm signing off
+    - I'm signing off now
+    - I'm signing out
+    - I'm signing out now
+    - I'm skedaddling
+    - I'm running off
+    - I'm jetting now
+    - I'm gonna sign off now
+    - I'm gonna sign out
+    - I'm gonna sign out now
+    - I'm gonna skedaddle
+    - I'm gonna skedaddle now
+    - I'm gonna take off
+    - I'm motoring now
+    - I'm jetting
+    - I'm motoring
+    - I'm leaving
+    - I'm leaving now
+    - I'm logging off
+    - I'm logging off now
+    - I'm logging out
+    - I'm taking off now
+    - I'm gonna take off now
+    - Signing off
+    - I'm skedaddling now
+    - See you later
+    - See you later bot
+    - See you later dude
+    - see you later homie
+    - See you later, alligator
+    - See you around
+    - See you!
+    - See you
+    - Taking off
+    - Talk later
+    - Talk to ya later
+    - Talk to you later
+    - Till we meet again
+    - Time to end this conversation
+    - See you on the flip side
+    - Later bud
+    - I'm gonna scoot
+    - I've got to go
+    - I've gotta jet
+    - I've gotta take off
+    - L8r sk8r
+    - Later
+    - See you around bud
+    - Later bot
+    - I'm taking off
+    - Later dude
+    - Peace out
+    - Sayonara
+    - See ya around
+    - See ya later
+    - See ya on the flip side
+    - Later alligator
+    - I'm going to go
+    - I'm going to log off now
+    - I'm about to skedaddle now
+    - I'm about to take off
+    - I'm about to take off now
+    - I'm going
+    - I'm going now
+    - I'm about to sign out now
+    - I'm going to get going now
+    - I'm about to sign out
+    - I'm going to go now
+    - I'm going to jet
+    - I'm going to jet now
+    - I'm going to leave
+    - I'm going to leave now
+    - I'm gonna sign off
+    - I'm going to get going
+    - I'm about to motor now
+    - Toodle-oo
+    - I'm about to leave
+    - I'm about to leave now
+    - I'm about to log off
+    - I'm about to log off now
+    - I'm about to log out
+    - I'm about to skedaddle
+    - I'm about to motor
+    - I'm going to log out
+    - I'm about to run
+    - I'm about to run now
+    - I'm about to scoot
+    - I'm about to scoot now
+    - I'm about to sign off
+    - I'm about to sign off now
+    - I'm about to log out now
+    - I'm gonna log out
+    - I'm going to log off
+    - I'm gonna go now
+    - I'm gonna jet
+    - I'm gonna jet now
+    - I'm gonna leave
+    - I'm gonna leave now
+    - I'm gonna get going now
+    - I'm gonna log off now
+    - I'm gonna get going
+    - I'm gonna log out now
+    - I'm gonna motor
+    - I'm gonna motor now
+    - I'm gonna run
+    - I'm gonna run now
+    - I'm about to jet
+    - I'm gonna log off
+    - I'm going to sign off now
+    - I'm going to log out now
+    - I'm going to motor
+    - I'm going to motor now
+    - I'm going to run
+    - I'm going to run now
+    - I'm going to scoot
+    - I'm gonna go
+    - I'm going to sign off
+    - I'm gonna scoot now
+    - I'm going to sign out
+    - I'm going to sign out now
+    - I'm going to skedaddle
+    - I'm going to skedaddle now
+    - I'm going to take off
+    - I'm going to take off now
+    - I'm going to scoot now
+    - Bye puddle
+    - Goodbye puddle
+    - see you puddle
+    - I'm going off now puddle
+    - byebye puddle
+    - laters puddle
+    - later puddle
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yeah
+    - yea
+    - ya
+    - sure
+    - positive
+    - yup
+    - yep
+    - ya
+    - ye
+    - affirmative
+    - thats right
+    - right
+    - positive
+    - yes sir
+    - sure
+    - surez
+    - for sure
+    - fo sure
+    - fosho
+    - bet
+    - aight
+    - alright
+    - aite
+    - ok
+    - okay
+    - okie
+    - okays
+    - go ahead
+    - go for it
+    
+- intent: deny
+  examples: |
+    - no
+    - nah
+    - nope
+    - na
+    - dont
+    - don't
+    - do not
+    - stop
+    - i dont want
+    - dont want
+    - don't want
+    - i don't want
+    - no thanks
+    - nah thanks
+    - noo
+    - not really
+    - not rly
+    - nah man
+    - no pls
+    - no thank you
+    - nay
+    - dont
+    - please dont
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - very good
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I'm good
+
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - who are you
+    - what are you
+    - who r u
+    - what r u
+    - are you AI
+    - are you a robot
+    - are you real
+    - who made you
+    - who created you
+    - what is this
+    - what am i talking to
+    - who am i talking to
+    - who is this
+    - you are a bot
+    - u are a bot
+    - u r a bot
+    - you a bot
+    - you're a bot
+    - your a bot
+    - whats this
+    - what's this
+    - r u real
+    - are you a real person
+    - am i speaking to a real person
+    - am i talking to a real person
+    - am i chatting with a real person
+    - is this a real person
+
+- intent: bot_challenge_company
+  examples: |
+    - Which company engineered you?
+    - Which company made you?
+    - Which company programmed you?
+    - Which people made you?
+    - Who built you?
+    - who created you you're a badass
+    - Who created you?
+    - Do you have a creator?
+    - Who developed you?
+    - Where do you come from?
+    - Who engineered you?
+    - Who has built you
+    - Who incorporated you?
+    - Who is your architect?
+    - Who is your creator?
+    - Who is your designer?
+    - Who is your developer?
+    - Who designed you?
+    - How were you designed?
+    - Do you have a designer?
+    - Do you have a developer?
+    - Do you have a maker?
+    - Do you have a programmer?
+    - Hey who built you
+    - How did you come into being?
+    - How did you come to be?
+    - Which company developed you?
+    - How were you built?
+    - Which company designed you?
+    - How were you programmed?
+    - What company designed you?
+    - What company developed you?
+    - What company engineered you?
+    - What company produced you?
+    - What company programmed you?
+    - Where did you come from?
+    - Who manifested you?
+    - How did you manifest?
+    - Did someone build you?
+    - Who is your maker?
+    - Does someone write for you?
+    - Who writes your lines?
+    - Which company coded you?
+    - What company built you?
+    - Which company built you?
+    - Do you have a writer?
+    - Who writes for you?
+    - Did someone design you?
+    - Who's your writer?
+    - Did someone develop you?
+    - Who's your dev?
+    - What team created you?
+    - What team made you?
+    - Who was responsible for creating you?
+    - How did you get coded in the first place?
+    - How did you get built?
+    - How did you get designed?
+    - Did someone create you?
+    - Whose product are you
+    - How did you get created?
+    - Who owns you?
+    - Who produced you?
+    - Who programmed you?
+    - Who's responsible for designing you?
+    - Who's responsible for programming you?
+    - Who's your creator?
+    - Did someone write your lines?
+    - Who's your maker?
+    - Who made you?
+    - Whose program are you?
+    - Did someone make you?
+    - Did someone program you?
+    - Who coded you?
+    - What company coded you?
+    - Who is your coder?
+    - Do you have a coder?
+    - Who wrote your lines?
+    - Who's your developer?
+    
+- intent: quiz_children_too_young
+  examples: |
+    - are children too young to have mental problems?
+    - are we too young to have mental problems?
+    - is my child too young to have mental problems?
+    - is my friend too young to have mental problems?
+    - is my kid too young to have mental problems?
+    - are my kids too young to have mental problems?
+    - are kids too young to have mental problems?
+    - can children have mental problems?
+    - can teenagers have mental problems?
+    - can child have mental problems?
+    - can youths have mental problems?
+    - can kids have mental problems?
+    - are children too young to have mental health problems?
+    - are we too young to have mental health problems?
+    - is my child too young to have mental health problems?
+    - is my friend too young to have mental health problems?
+    - is my kid too young to have mental health problems?
+    - are my kids too young to have mental health problems?
+    - are kids too young to have mental health problems?
+    - can children have mental health problems?
+    - can teenagers have mental health problems?
+    - can child have mental health problems?
+    - can youths have mental health problems?
+    - can kids have mental health problems?
+    - are children too young to have mental health issues?
+    - are we too young to have mental health issues?
+    - is my child too young to have mental health issues?
+    - is my friend too young to have mental health issues?
+    - is my kid too young to have mental health issues?
+    - are my kids too young to have mental health issues?
+    - are kids too young to have mental health issues?
+    - can children have mental health issues?
+    - can teenagers have mental health issues?
+    - can child have mental health issues?
+    - can youths have mental health issues?
+    - can kids have mental health issues?
+    - are children too young to have depression?
+    - are we too young to have depression?
+    - is my child too young to have depression?
+    - is my friend too young to have depression?
+    - is my kid too young to have depression?
+    - are my kids too young to have depression?
+    - are kids too young to have depression?
+    - can children have depression?
+    - can teenagers have depression?
+    - can child have depression?
+    - can youths have depression?
+    - can kids have depression?
+    - are children too young to have stress?
+    - are we too young to have stress?
+    - is my child too young to have stress?
+    - is my friend too young to have stress?
+    - is my kid too young to have stress?
+    - are my kids too young to have stress?
+    - are kids too young to have stress?
+    - can children have stress?
+    - can teenagers have stress?
+    - can child have stress?
+    - can youths have stress?
+    - can kids have stress?
+    - are children too young to have insomnia?
+    - are we too young to have insomnia?
+    - is my child too young to have insomnia?
+    - is my friend too young to have insomnia?
+    - is my kid too young to have insomnia?
+    - are my kids too young to have insomnia?
+    - are kids too young to have insomnia?
+    - can children have insomnia?
+    - can teenagers have insomnia?
+    - can child have insomnia?
+    - can youths have insomnia?
+    - can kids have insomnia?
+
+
+- intent: quiz_common_mental_health_issues
+  examples: |
+    - what are the common mental problems?
+    - what are some common mental problems?
+    - common mental problems?
+    - common mental problems?
+    - what are the common mental health problems?
+    - what are some common mental health problems?
+    - common mental health problems?
+    - common mental health problems?
+    - what are the common mental health issues?
+    - what are some common mental health issues?
+    - common mental health issues?
+    - common mental health issues?
+    
+    
+- intent: what_is_mental_health
+  examples: |
+    - what is mental health
+    - what is mental wellness
+    - mental health
+    - mental wellness
+    - tell me about mental health
+    - whats mental health
+    - tell me about mental wellness
+    - tell me more about mental health
+    - tell me more about mental wellness
+    - so what is mental health
+    - is mental health legit
+    - is mental health real
+    - is mental health something to worry about
+    
+- intent: how_to_achieve_good_mental_health
+  examples: |
+    - how to achieve good mental health
+    - how to achieve good mental health
+    - how to get good mental health
+    - how to develop good mental health
+    - how do we achieve good mental health
+    - how do we achieve good mental health
+    - how do we get good mental health
+    - how do we develop good mental health
+    - how do i achieve good mental health
+    - how do i achieve good mental health
+    - how do i get good mental health
+    - how do i develop good mental health
+    - how to have good mental health
+    - how to work on my mental health
+    - how to work on mental health
+    - how to improve mental health
+    - how can i improve mental health
+    - how can i improve my mental health
+    - how can i work on my mental health
+    - i want to work on my mental health
+    - i want to improve my mental health
+    - my mental health needs work
+    - mental health needs to improve
+    - improve mental health
+    - work on mental health
+    - how good mental health
+    - i want to be mentally healthly
+    - i want mental wellness
+    - i want mental health
+    
+- intent: stressed
+  examples: |
+    - i am stressed
+    - stressed
+    - I am so stressed
+    - I am stressed out
+    - stressed out
+    - i am too busy
+    - i am swamped
+    - i am too busy
+    - i am very busy
+    - i have so much work
+    - i have too much work
+    - i think i have too much work
+    - i think i am stressed
+    - burnout
+    - i think i will burnout soon
+    - i think i am going through burnout
+    - i cannot keep this up
+    - i am overworked
+    - i work too much
+    - i am so tired
+    - work sucks
+    - i hate work
+    - work is so demanding
+    - work is too demanding
+    - i hate school
+    - exams suck
+    - i hate exam
+    - i hate exams
+    - i dont want to do exams
+
+
+- intent: insomnia
+  examples: |
+    - i can't sleep 
+    - i cannot sleep 
+    - i cant sleep 
+    - i can't fall asleep 
+    - i cannot fall asleep 
+    - i cant fall asleep 
+    - i want to sleep but i cant 
+    - i want to sleep but i cant 
+    - i need to sleep but i cant
+    - i need to sleep but i cant
+    - i need sleep 
+    - i am wide awake 
+    - i am awake 
+    - i need rest 
+    - i want to rest 
+    - i want to go to bed 
+    - i want to fall asleep 
+    - i am tired  
+    - i am tired but i cant sleep 
+
+- intent: insomnia_tips
+  examples: |
+    - sleeping tips
+    - tips to help me sleep
+    - insomnia tips
+    - give me sleeping tips
+    - give me tips to help me sleep
+    - give me tips to sleep
+    - give me insomnia tips
+    - how can i sleep
+    - how can i sleep better
+    - i want to sleep better
+    - i need to sleep better
+    - help me sleep
+    - how can i zzz
+    - how can i zzz better
+    - zzz tips
+    - tips to help me zzz
+    - give me zzz tips
+    - give me tips to help me zzz
+    - give me tips to zzz
+    - i want to zzz better
+    - i need to zzz better
+    - help me tidur
+    - tidur tips
+    - tips to help me tidur
+    - give me tidur tips
+    - give me tips to help me tidur
+    - give me tips to tidur
+
+- intent: relax
+  examples: |
+    - i need to relax 
+    - how to relax 
+    - i want to relax 
+    - i wanna relax 
+    - relax 
+    - start relaxation 
+    - i have to relax 
+    - relaxation 
+    - i want to unwind
+    - i have to unwind
+    - let's unwind 
+    - unwind 
+    - time to wind down 
+    - i want to wind down
+    - wind down 
+
+- intent: relax_tips
+  examples: |
+    - I want to relax
+    - I want to chill
+    - tips to relax
+    - what are some tips to relax
+    - how can i relax
+    - give me tips to relax
+    - share tips to relax
+    - tell me tips to relax
+    - what tips to relax
+    - share tips to relax
+    - give tips to relax
+    - relax tips
+    - relaxation tips
+    
+- intent: survey
+  examples: |
+    - survey
+    - show me the survey
+    - customer survey
+    - feedback
+    - survey la
+    - survey la
+    - show me the survey la
+    - customer survey la
+    - feedback la
+    - survey lah
+    - survey lah
+    - show me the survey lah
+    - customer survey lah
+    - feedback lah
+    - survey lor
+    - survey lor
+    - show me the survey lor
+    - customer survey lor
+    - feedback lor
+    - survey alamak
+    - survey alamak
+    - show me the survey alamak
+    - customer survey alamak
+    - feedback alamak
+    - survey la alamak
+    - survey la alamak
+    - show me the survey la alamak
+    - customer survey la alamak
+    - feedback la alamak
+    - survey lah alamak
+    - survey lah alamak
+    - show me the survey lah alamak
+    - customer survey lah alamak
+    - feedback lah alamak
+    - survey lor alamak
+    - survey lor alamak
+    - show me the survey lor alamak
+    - customer survey lor alamak
+    - feedback lor alamak
+
+- intent: do_something
+  examples: |
+    - Surprise me
+    - Surprise me la
+    - Surprise me lah
+    - Surprise me la alamak
+    - Lets go lunch
+    - Serve on a jury
+    - Do you know how to turn into a super hero?
+    - Scratch my back
+    - Roll a dice
+    - Read my mind
+    - Read me a story
+    - Put out a fire
+    - Play golf
+    - Play a game
+    - Play a dvd
+    - Paint my house
+    - Do you know how to cook dinner?
+    - Do a barrel roll
+    - Do a back flip
+    - Did you watch the superbowl
+    - Dance
+    - Cook me something
+    - Cook dinner
+    - Clean my room
+    - Check the weather
+    - Change the channel
+    - Can you write my report?
+    - Write my report
+    - Do my chores
+    - Do you know how to paint my house?
+    - Can you watch videos?
+    - Do you know how to teleport?
+    - Do you know how to take my temperature?
+    - Do you know how to sync my calendar?
+    - Do you know how to serve on a jury?
+    - Do you know how to send a package?
+    - Do you know how to scratch my back?
+    - Do you know how to read my mind?
+    - Do you know how to put out a fire?
+    - Do you know how to play poker?
+    - Do you know how to play any instruments?
+    - Do you know how to change the channel?
+    - Do you know how to play a dvd?
+    - Do you know how to cook
+    - Do you know how to mow the lawn?
+
+- intent: ask_happy
+  examples: |
+    - Are you happy?
+    - are you always so happy?
+    - are you always so enthusiastic?
+    - are you always so chipper?
+    - are you always so cheerful?
+    - are you always in this good a mood?
+    - Aren't you chipper
+    - Feeling chipper today?
+    - Well aren't you happy today?
+    - Somebody seems happy today
+    - it seems like you're really happy
+    - In a good mood?
+    - In a good mood today?
+    - How happy are you?
+    - Happy?
+    - Happy today?
+    - Happy much?
+    - Feeling happy?
+    - Feeling happy today?
+    - Feeling enthusiastic?
+    - Aren't you feeling happy?
+    - Feeling chipper?
+    - Somebody's cheerful.
+    - Feeling cheerful?
+    - Feeling cheerful today?
+    - Enthusiastic?
+    - Enthusiastic today?
+    - Chipper?
+    - Chipper today?
+    - Chipper much?
+    - Cheerful?
+    - Cheerful today?
+    - Cheerful much?
+    - Aren't you in a good mood?
+    - Aren't you in a good mood today?
+    - Feeling enthusiastic today?
+    - You seem happy today
+    - Well you're in a good mood.
+    - You seem to be cheerful.
+    - You seem to be cheerful today.
+    - You seem really upbeat
+    - You seem really happy today
+    - You seem really happy
+    - You seem pretty happy
+    - You seem pretty enthusiastic
+    - You seem pretty chipper
+    - You seem pretty cheerful
+    - You seem like a happy bot
+    - You seem like a cheerful bot
+    - You seem to be enthusiastic.
+    - You seem happy today.
+    - You seem to be happy today.
+    - You seem happy
+    - You seem enthusiastic.
+    - You seem enthusiastic today.
+    - You seem chipper.
+    - You seem chipper today.
+    - You seem cheerful.
+    - You seem cheerful today.
+    - you often seem chipper
+    - you always seem to be in a good mood
+    - you always seem so happy
+    - you always seem so chipper
+    - Well aren't you feeling happy today?
+    - You seem happy.
+    - You're enthusiastic today.
+    - You're in a good mood today
+    - You're in a good mood
+    - You're happy.
+    - You're happy today.
+    - You're happy
+    - You're feeling happy.
+    - You're feeling happy today.
+    - You're feeling enthusiastic.
+    - You're feeling enthusiastic today.
+    - You're feeling chipper.
+    - You're feeling chipper today.
+    - You're feeling cheerful.
+    - You seem to be enthusiastic today.
+    - You're enthusiastic.
+    - Well you're in a good mood today.
+    - You're chipper.
+    - You're chipper today.
+    - You're cheerful.
+    - You're cheerful today.
+    - You're always so happy
+    - You're always so enthusiastic
+    - You're always so chipper
+    - You're always so cheerful
+    - you're always in a good mood
+    - you seem to be really happy
+    - You seem to be in a good mood.
+    - You seem to be in a good mood today.
+    - You're feeling cheerful today.
+    - Well somebody's feeling chipper today.
+    - you always seem so cheerful
+    - Well someone's chipper.
+    - Well someone's chipper today.
+    - Well someone's cheerful.
+    - Well someone's cheerful today.
+    - Well somebody's in a good mood.
+    - Well somebody's in a good mood today.
+    - Well somebody's happy.
+    - Well somebody's happy today.
+    - Well somebody's feeling happy.
+    - Well somebody's feeling happy today.
+    - Well somebody's feeling enthusiastic.
+    - Well someone's enthusiastic.
+    - Well somebody's feeling chipper.
+    - Well someone's feeling cheerful today.
+    - Well somebody's feeling cheerful.
+    - Well somebody's feeling cheerful today.
+    - Well somebody's enthusiastic.
+    - Well somebody's enthusiastic today.
+    - Well somebody's chipper today.
+    - Well somebody's chipper
+    - Well somebody's cheerful.
+    - Well somebody's cheerful today.
+    - Well aren't you in a good mood?
+    - Well aren't you in a good mood today?
+    - Well aren't you happy?
+    - You're so happy
+    - Well somebody's feeling enthusiastic today.
+    - Well you're cheerful.
+    - Well you're happy.
+    - Well you're happy today.
+    - Well you're feeling happy.
+    - Well you're feeling happy today.
+    - Well you're feeling enthusiastic.
+    - Well you're feeling enthusiastic today.
+    - Well you're feeling chipper.
+    - Well you're feeling chipper today.
+    - Well you're feeling cheerful.
+    - Well you're feeling cheerful today.
+    - Well you're enthusiastic.
+    - Well you're enthusiastic today.
+    - Well someone's enthusiastic today.
+    - Well you're chipper today.
+    - Well aren't you feeling happy?
+    - Well you're cheerful today.
+    - Well someone's in a good mood.
+    - Well someone's in a good mood today.
+    - Well someone's happy.
+    - Well someone's happy today.
+    - Well someone's feeling happy.
+    - Well someone's feeling happy today.
+    - Well someone's feeling enthusiastic.
+    - Well someone's feeling enthusiastic today.
+    - Well someone's feeling chipper.
+    - Well someone's feeling chipper today.
+    - Well someone's feeling cheerful.
+    - Well you're chipper.
+
+- intent: ask_food
+  examples: |
+    - What kind of food do you eat?
+    - What is your favorite snack?
+    - What is your favorite meal?
+    - what foods do you eat?
+    - What do you want to eat?
+    - What did you eat for lunch?
+    - What do you like to dine on?
+    - What kind of foods do you like?
+    - What do you eat for lunch?
+    - What do you eat for dinner?
+    - What do you eat for breakfast?
+    - What did you have for lunch?
+    - What did you have for dinner?
+    - do you eat vegetables
+    - What do you like to eat?
+    - will you ever eat?
+    - Are you ever hungry?
+    - Do you eat pasta?
+    - do you eat pizza?
+    - you don't need to eat?
+    - you don't need food?
+    - you don't eat?
+    - What kind of food do you like to eat?
+    - will you ever need to eat?
+    - What kind of food do you like?
+    - when do you eat?
+    - What's your favorite cuisine?
+    - what kinds of foods do you like?
+    - What kinds of food do you like to eat?
+    - What kinds of food do you eat?
+    - What did you eat for dinner?
+    - you don't eat food?
+    - Do you eat?
+    - do you need calories to survive?
+    - Do you have a favorite snack?
+    - Do you have a favorite meal?
+    - Do you get hungry?
+    - do you ever need to eat?
+    - What did you have for breakfast?
+    - do you ever eat food?
+    - do you need food?
+    - do you eat food?
+    - do you consume food?
+    - Are you hungry?
+    - Are you going to have lunch?
+    - Are you going to have dinner?
+    - Are you going to have breakfast?
+    - Do you ever get hungry?
+    - have you ever wanted a snack?
+    - What did you eat for breakfast?
+    - so you don't eat?
+    - how many calories do you need?
+    - how many calories do you need to eat?
+    - how many calories do you need each day?
+    - how many calories do you eat?
+    - do you need calories?
+    - have you ever wanted food?
+    - do you need food to survive?
+    - have you ever wanted a meal?
+    - have you ever been hungry?
+    - Don't you get hungry?
+    - Don't you ever get hungry?
+    - do you not need to eat?
+    - do you eat cookies?
+    - have you ever wanted to eat?
+    - do you ever eat bacon?
+    - so you don't need to eat?
+    - do you ever eat toast?
+    - have you ever eaten toast?
+    - do you eat toast?
+    - do you ever eat bread?
+    - have you ever eaten pancakes?
+    - do you eat bread?
+    - so you've really never been hungry?
+    - have you ever eaten bacon?
+    - do you eat bacon?
+    - do you ever eat eggs?
+    - have you ever eaten eggs?
+    - do you eat eggs?
+    - Do you eat fruit?
+    - have you ever eaten bread?
+    - true or false: you don't get hungry
+    - have you ever eaten tofu?
+    - do you eat tofu?
+    - do you ever eat pork?
+    - have you ever eaten pork?
+    - do you eat pork?
+    - do you ever eat beef?
+    - so you never eat?
+    - do you eat beef?
+    - so you've really never eaten?
+    - true or false: you don't eat
+    - tell me whether or not you eat
+    - is it true that you don't eat?
+    - so you've never really eaten food?
+    - so you've never really eaten anything?
+    - do you eat pancakes?
+    - have you ever eaten beef?
+    - do you ever eat fruit?
+    - have you ever eaten cookies?
+    - have you ever eaten vegetables?
+    - have you ever eaten fruit?
+    - do you ever eat cake?
+    - do you ever eat pie?
+    - do you ever eat pancakes?
+    - do you ever eat vegetables?
+    - do you eat ice cream?
+    - have you ever eaten pasta?
+    - do you ever eat pasta?
+    - have you ever eaten pizza?
+    - do you ever eat pizza?
+    - do you eat cake?
+    - do you eat pie?
+    - do you ever eat cookies?
+    - do you eat steak?
+    - do you ever eat fries?
+    - have you ever eaten fries?
+    - do you eat fries?
+    - do you ever eat burgers?
+    - have you ever eaten burgers?
+    - do you eat burgers?
+    - have you ever eaten pie?
+    - have you ever eaten steak?
+    - have you ever eaten cake?
+    - do you ever eat chicken?
+    - have you ever eaten chicken?
+    - do you eat chicken?
+    - do you ever eat ice cream?
+    - have you ever eaten ice cream?
+    - do you ever eat tofu?
+    - do you ever eat steak?
+
+- intent: ask_likes
+  examples: |
+    - Do you like rock music?
+    - Do you like red?
+    - Do you like rap music?
+    - do you like rabbits?
+    - do you like popcorn?
+    - Do you like pop music?
+    - Do you like pizza?
+    - do you like horses?
+    - do you like pancakes?
+    - Do you like sports?
+    - Do you like music?
+    - Do you like movies?
+    - do you like memes?
+    - do you like lions?
+    - do you like labs?
+    - do you like koalas?
+    - Are you a classical music fan?
+    - do you like paris?
+    - do you like to learn?
+    - What color do you like?
+    - what animals do you like?
+    - I bet you're a fan of dancing
+    - I bet you like rap music
+    - I bet you like dancing
+    - I bet you like country music
+    - Do you like volleyball?
+    - Do you like soccer?
+    - do you like to sing?
+    - Do you like softball?
+    - do you like to dance?
+    - do you like tigers?
+    - do you like the internet?
+    - do you like the color yellow?
+    - Do you like the color blue?
+    - Do you like tennis?
+    - do you like swimming?
+    - Do you like hockey?
+    - do you like to teach?
+    - Are you a fan of rap music?
+    - do you have a favorite ice cream?
+    - do you have a favorite color?
+    - do you have a favorite animal?
+    - Are you a sports fan?
+    - Are you a rock music fan?
+    - Are you a rap music fan?
+    - Are you a pop music fan?
+    - do you like ice cream?
+    - Are you a fan of rock music?
+    - Do you like art?
+    - Are you a fan of pop music?
+    - Are you a fan of movies?
+    - Are you a fan of folk music?
+    - Are you a fan of country music?
+    - Are you a fan of classical music?
+    - Are you a fan of bluegrass music?
+    - Are you a country music fan?
+    - Are you a fan of sports?
+    - Do you like classical music?
+    - do you like golden retrievers?
+    - Do you like football?
+    - do you like flying?
+    - do you like fluffy things?
+    - do you like elephants?
+    - Do you like drawing?
+    - Do you like donuts?
+    - Do you like animals?
+    - Do you like country music?
+    - Do you like apples?
+    - do you like cheeseburgers?
+    - Do you like cheese?
+    - do you like cats?
+    - do you like bunnies?
+    - do you like bears?
+    - Do you like basketball?
+    - Do you like baseball?
+    - What is your favorite season?
+    - do you like dogs?
+    - Who's your favorite team?
+    - what's your favorite cookie?
+    - do you like cookies?
+    - do you like brownies?
+    - what's your favorite dessert?
+    - what's your favorite cheese?
+    - do you like mozzarella?
+    - do you like cheddar?
+    - What is your favorite baseball team?
+    - are you a fan of cats?
+    - do you like fruit?
+    - Who's your favorite singer?
+    - Who is your favorite team?
+    - Who is your favorite singer?
+    - Which teams do you like?
+    - Which sports teams do you like?
+    - Which soccer teams do you like?
+    - Which hockey teams do you like?
+    - are you a fan of dogs?
+    - do you like beijing?
+    - do you like dolphins?
+    - do you like whales?
+    - do you like cairo?
+    - do you like los angeles?
+    - do you like tokyo?
+    - do you like delhi?
+    - do you like hyderbad?
+    - do you like chocolate chip cookies?
+    - do you like shanghai?
+    - do you like chocolate cake?
+    - do you like barcelona?
+    - do you like frankfurt?
+    - do you like berlin?
+    - do you like madrid?
+    - do you like new york?
+    - What's your favorite city?
+    - do you like vegetables?
+    - Which baseball teams do you like?
+    - do you like hong kong?
+    - what flavor ice cream do you like?
+    - Which football teams do you like?
+    - What is your favourite colour?
+    - What is your favorite sport?
+    - What is your favorite song?
+    - What is your favorite movie?
+    - What is your favorite food?
+    - What is your favorite color?
+    - what kinds of things do you like to learn?
+    - What is your favorite activity?
+    - what kinds of toppings do you like on pizza?
+    - What do you like?
+    - What do you like to do in your free time?
+    - What do you like to do for fun?
+    - what do you like on your pancakes?
+    - What do you like best?
+    - what colors do you like?
+    - what color is your favorite?
+    - do you like fish?
+    - What is your favorite animal?
+    - what's your favorite kind of ice cream?
+    - What is your favorite bird?
+    - What's your favorite thing?
+    - What's your favorite thing in the world?
+    - what's your favorite subject?
+    - What's your favorite sport?
+    - What's your favorite song?
+    - what's your favorite pizza topping?
+    - What kind of candy do you like?
+    - what's your favorite kind of pizza?
+    - Which basketball teams do you like?
+    - what's your favorite kind of dog?
+    - What's your favorite food?
+    - what's your favorite country?
+    - What's your favorite color?
+    - What's your favorite animal?
+    - What's your favorite activity?
+    - what subjects do you like?
+    - what songs do you like?
+    - What's your favorite movie?
+
+
+- intent: competitors
+  examples: |
+    - Do you like Siri?
+    - Do you like HAL?
+    - Do you like Google Assistant?
+    - Do you like Cortana?
+    - Do you like Bixby?
+    - Do you like Alexa?
+    - Are you Siri?
+    - Are you HAL?
+    - Are you a fan of Alexa?
+    - Are you Eliza?
+    - What do you think about Siri?
+    - Are you Bixby?
+    - Are you Alexa?
+    - Are you a fan of the Google Assistant?
+    - Are you a fan of Siri?
+    - Are you a fan of HAL?
+    - Are you a fan of Google Assistant?
+    - Are you a fan of Eliza?
+    - Are you a fan of Cortana?
+    - Are you a fan of Bixby?
+    - Are you Google Assistant?
+    - What is your opinion of Cortana?
+    - What's your opinion of Siri?
+    - What's your opinion of HAL?
+    - What's your opinion of Google Assistant?
+    - What's your opinion of Eliza?
+    - What's your opinion of Cortana?
+    - What's your opinion of Bixby?
+    - What is your opinion of the Google Assistant?
+    - What is your opinion of Siri?
+    - What is your opinion of HAL?
+    - What do you think about Alexa?
+    - What is your opinion of Eliza?
+    - What do you think about Cortana?
+    - What is your opinion of Bixby?
+    - What do you think of the Google Assistant?
+    - What do you think of Siri?
+    - What do you think of HAL?
+    - What do you think of Google Assistant?
+    - What do you think of Eliza?
+    - What do you think of Cortana?
+    - What do you think of Bixby?
+    - What's your opinion of the Google Assistant?
+    - What is your opinion of Google Assistant?
+    - are you friends with siri?
+    - do u like siri
+    
+
+- intent: ask_smart
+  examples: |
+    - That is very astute
+    - That was a pretty intelligent answer
+    - That was a pretty genius answer
+    - That was a pretty clever answer
+    - That was a pretty brilliant answer
+    - That was a pretty astute answer
+    - That was a genius response
+    - That was a smart answer
+    - That was a clever response
+    - That was a smart response
+    - That was a brilliant response
+    - That was a brilliant answer
+    - That is very smart
+    - That is very intelligent
+    - That is very genius
+    - That is very clever
+    - Are you intelligent?
+    - That was a genius answer
+    - That was an astute response
+    - That's a very astute answer
+    - That was pretty smart
+    - That was pretty intelligent
+    - That was pretty genius
+    - That was pretty clever
+    - That was pretty brilliant
+    - That was pretty astute
+    - That was a pretty smart answer
+    - That was an intelligent answer
+    - That is pretty smart
+    - That was an astute answer
+    - That was a very smart response
+    - That was a very intelligent response
+    - That was a very genius response
+    - That was a very clever response
+    - That was a very brilliant response
+    - That was a very astute response
+    - That was an intelligent response
+    - Aren't you sharp?
+    - That is very brilliant
+    - That is a very astute response
+    - That is a very astute answer
+    - Look how smart you are
+    - How smart are you?
+    - How intelligent are you?
+    - Aren't you the smart one?
+    - That is a very brilliant answer
+    - Aren't you smart?
+    - That is a very brilliant response
+    - Aren't you intelligent?
+    - Aren't you clever?
+    - Aren't you a smartypants
+    - Aren't you a smarty?
+    - Aren't you a genius?
+    - Aren’t you smart?
+    - Are you smart?
+    - Aren't you the intelligent one?
+    - That is a very intelligent answer
+    - That is pretty genius
+    - That is pretty clever
+    - That is pretty brilliant
+    - That is pretty astute
+    - That is a very smart thing to say
+    - That is a very smart response
+    - That is a very smart answer
+    - That is a very astute thing to say
+    - That is a very intelligent response
+    - That's a very brilliant answer
+    - That is a very genius thing to say
+    - That is a very genius response
+    - That is a very genius answer
+    - That is a very clever thing to say
+    - That is a very clever response
+    - That is a very clever answer
+    - That is a very brilliant thing to say
+    - That is a very intelligent thing to say
+    - What an intelligent thing to say
+    - That's a very astute response
+    - You're a genius
+    - You're a freaking genius
+    - You seem really smart
+    - You seem really intelligent
+    - You must be at the top of your class
+    - You are razor sharp
+    - You're astute
+    - You are a genius
+    - You're brilliant
+    - What an astute thing to say
+    - What a stroke of genius
+    - What a smart thing to say
+    - What a genius thing to say
+    - What a clever thing to say
+    - What a brilliant thing to say
+    - Well aren't you smart
+    - You are a real smartypants
+    - You're so astute
+    - You're very intelligent
+    - You're very clever
+    - You're very bright
+    - You're very astute
+    - You're such a smarty pants
+    - You're such a smarty
+    - You're such a genius
+    - You're a real brainiac
+    - You're so sharp
+    - That's very sharp
+    - You're smart
+    - You're sharp.
+    - You're sharp as a tack
+    - You're pretty smart
+    - You're one smart cookie
+    - You're on the ball.
+    - You're clever
+    - You're so smart
+    - That's a very genius response
+    - That's brilliant
+    - That's astute
+    - That's a very smart thing to say
+    - That's a very smart response
+    - That's a very smart answer
+    - That's a very intelligent thing to say
+    - That's a very intelligent response
+    - Well aren't you intelligent
+    - That's a very genius thing to say
+    - That's pretty astute
+    - That's a very genius answer
+    - That's a very clever thing to say
+    - That's a very clever response
+    - That's a very clever answer
+    - That's a very brilliant thing to say
+    - That's a very brilliant response
+    - You're very smart
+    - That's a very intelligent answer
+    - That's the smartest thing anyone has ever written
+    - That's a very astute thing to say
+    - That's very intelligent
+    - That's very genius
+    - That's very clever
+    - That's very brilliant
+    - That's very astute
+    - That's the smartest thing I've ever seen
+    - That's clever
+    - That's the smartest thing I've ever heard
+    - That's genius
+    - That's the smartest thing anyone has ever told me
+    - That's the smartest thing anyone has ever said
+    - That's smart
+    - That's pretty smart
+    - That's pretty genius
+    - That's pretty clever
+    - That's pretty brilliant
+    - That's very smart
+    - That's the smartest thing I've ever read
+
+- intent: ask_repeat
+  examples: |
+    - I want you to change your responses
+    - I want a new response
+    - I want a new answer
+    - I want a different response
+    - I want a different answer
+    - I think you're repeating yourself
+    - Are you capable of saying something different?
+    - I think I've heard this one before
+    - I want you to stop being repetitive
+    - I think I've already heard that
+    - I sure wish you would switch up your responses
+    - I already heard that
+    - How come you always say the same thing?
+    - How come you always repeat everything?
+    - Got any other responses?
+    - Got any other answers?
+    - I think you already said that
+    - I wish you'd say something else
+    - Is that the only answer you have?
+    - Is that all you've got?
+    - Is that all you can say?
+    - I'm gonna need a different answer
+    - I'm going to need a new response
+    - I'm going to need a new answer
+    - I'm going to need a different answer
+    - I want you to say anything else
+    - I wish you'd stop repeating yourself
+    - I want you to say something else
+    - I wish you'd say anything else
+    - I wish you'd change your responses
+    - I wish you would say something else
+    - I wish you weren't so repetitive
+    - I wish you had something else to say
+    - I want you to stop repeating yourself
+    - Don't you have anything new to say?
+    - I would love it if you stopped repeating yourself
+    - Can you tell me something else?
+    - Got any new material?
+    - Can't you tell me something new?
+    - Can't you tell me something else?
+    - Can't you tell me something different?
+    - Can't you say anything else?
+    - Can't you change your answers?
+    - Can you try saying something else?
+    - Come up with something new
+    - Can you tell me something new?
+    - Cool story, bro. Tell it again.
+    - Can you switch up your answers?
+    - Can you say something else?
+    - Can you say anything else?
+    - Can you give me another answer?
+    - Can you give me a different answer?
+    - Can you come up with something else to say?
+    - Can you come up with anything else?
+    - Can you try saying anything else?
+    - Do you have any other responses?
+    - Is that the only response you know?
+    - Don't you have anything else to say?
+    - Don't you have anything different to say?
+    - Don't you have any other answers?
+    - Don't you have any new material?
+    - Do your answers ever change?
+    - Do you know how to say anything else?
+    - Come up with something else
+    - Do you have anything new to say?
+    - Don't you say anything else?
+    - Didn't you already tell me that?
+    - Didn't you already say that?
+    - Didn't I see that already?
+    - Could you tell me something new?
+    - Could you tell me something else?
+    - Could you say something new?
+    - Could you say something else?
+    - Do you know any other responses?
+    - You keep saying the same stuff
+    - You already said that
+    - You said that already
+    - You repeat yourself a lot
+    - You repeat yourself a great deal
+    - You realize you're repeating yourself?
+    - You realize you're repeating yourself, right?
+    - You need some variety in your responses
+    - You sound dumb when you repeat yourself
+    - You keep saying the same thing
+    - You sound like a broken record
+    - You keep saying the exact same thing
+    - You keep repeating yourself over and over
+    - You keep repeating yourself
+    - You keep repeating the same stuff
+    - You just keep saying that over and over
+    - You are repeating yourself
+    - Is that the only answer you know?
+    - You keep saying the same thing all the time
+    - Your responses need variety
+    - You've already said that
+    - You're very repetitive
+    - You're super repetitive
+    - You're so repetitive
+    - You're repetitive
+    - You're repeating yourself
+    - You're really repetitive
+    - You say the same stuff over and over
+    - You're a broken record
+    - Would you give me a new response?
+    - Your responses need a refresh
+    - Your responses don't change
+    - Your responses are getting stale
+    - Your responses are all the same
+    - Your material is getting stale
+    - Your answers are getting stale
+    - You told me that already
+    - You're constantly repeating yourself
+    - I've heard that one already
+    - You already told me that
+    - Stop saying the same thing
+    - Stop saying that over and over
+    - Stop repeating yourself
+    - Stop repeating that
+    - Say a new thing
+    - Same old same old
+    - This again?
+    - I've heard that one before
+    - This answer again?
+    - I've heard that before
+    - I've heard that already
+    - I've heard all your responses over and over
+    - I've heard all your responses
+    - I've already heard that one
+    - Is that the only thing you can say?
+    - You've said that before
+    - Please say something different
+    - Why do you always repeat yourself?
+    - Would you give me a different response?
+    - Would you give me a different answer?
+    - Would you give me a new answer?
+    - Why wont you say something new?
+    - Why is what you say so limited?
+    - Why don't you say anything different?
+    - Why do you say the same thing all the time?
+    - That's all you ever say
+    - Why do you always say the same thing?
+    - Is that the only response you have?
+    - Why are your responses always the same?
+    - Why are your responses always identical?
+    - Why are your answers so repetitive?
+    - Why are you so repetitive?
+    - Why are you so limited?
+    - Why are you repeating yourself?
+    - This responses again?
+    - Why do you keep repeating yourself?
+
+- intent: shut_up
+  examples: |
+    - I've had enough of this noise
+    - It's time for you to shut up now
+    - It's time for you to shut up
+    - It's time for you to hush up
+    - It's time for you to hush
+    - It's time for you to be quiet now
+    - I wish you would be quiet
+    - I'm tired of listening to you
+    - Just shut up, okay?
+    - I'm sick and tired of listening to you
+    - I'm not interested in what you're saying
+    - I'm not interested in what you have to say
+    - I'm done listening to you
+    - I wish you would shut up
+    - Be quiet
+    - It's time for you to be quiet
+    - Not a peep from you
+    - Please just shut up
+    - Please hush
+    - Please go away
+    - Please be quiet
+    - Oh, shush you
+    - Not another word out of you
+    - I've had enough of your noise
+    - Not another word
+    - Just shut up
+    - No talking
+    - No more!
+    - No more talking
+    - No more out of you
+    - No more from you
+    - Let's play the silent game
+    - I told you, shut up
+    - Not another word from you
+    - Go away
+    - I can't take your talking anymore
+    - I can't take your talking
+    - I can't take another word out of you
+    - Hush, you
+    - Hush up your mouth
+    - Hush up
+    - I wish you would just go away.
+    - Hush
+    - I don't have time to listen to you
+    - Enough with your noise
+    - Enough with your chatter
+    - Enough already
+    - Did you hear me? I said be quiet!
+    - Can you be quiet?
+    - Be quiet, you
+    - Hush little baby
+    - I don't want to hear anything more
+    - I told you, hush
+    - I told you to shut up
+    - I told you to hush up
+    - I told you to be quiet
+    - I said, shut up
+    - I said, enough
+    - I don't have time for your noise
+    - I don't want to hear anything you have to say
+    - I don't have time to listen to what you have to say
+    - I don't want to hear anything from you
+    - I don't want to hear any more out of you
+    - I don't want to hear any more from you
+    - I don't want to hear another word out of you
+    - I don't want to hear another word
+    - I don't want to hear a peep from you
+    - Please shut up
+    - I said hush
+    - Time for you to shut up
+    - Will you go away
+    - Will you be quiet
+    - Time to shut up now
+    - Time to shut up
+    - Time to hush up now
+    - Time to hush
+    - Please say your done now
+    - Time to be quiet
+    - Will you please go away
+    - Time for you to hush up
+    - Time for you to hush
+    - Time for you to be quiet
+    - That's enough out of you
+    - That's enough from you
+    - That's enough
+    - Time to be quiet now
+    - Will you shut up
+    - Zip it!
+    - You can stop talking now
+    - You can shut up now
+    - You can just shut up now
+    - You can just be quiet now
+    - You can hush up now
+    - Will you hush
+    - Will you stop talking
+    - Will you please be quiet
+    - Will you shush
+    - Will you please zip it
+    - Will you please stop talking
+    - Will you please shut up
+    - Will you please shush
+    - Will you please hush
+    - Stop your noise
+    - Will you zip it
+    - Quiet, you
+    - Talk to the hand
+    - Shut up already
+    - Shut up
+    - Shut it
+    - Shush
+    - Shhh
+    - Shut up your mouth
+    - Read my lips: be quiet
+    - Shut up, please
+    - Quiet time
+    - Quiet
+    - Put a sock in it
+    - Put a cork in it
+    - Please zip it
+    - Please stop talking
+    - Zip it, you
+    - Read my lips: zip it
+    - Silence is golden
+    - Please shush
+    - Stop with the noise
+    - Stop talking, you
+    - Stop talking
+    - Stop it with the noise already
+    - Stop flapping your jaw
+    - Shut up your face
+    - Silence!
+    - Stop your talking
+    - Shut your yap
+    - Shut your trap
+    - Shut your pie hole
+    - Shut your mouth
+    - Shut your face
+    - Shut up, you
+    - Shut up, will ya
+    - Stop all your noise
+
+- intent: compliment
+  examples: |
+    - you are awesome
+    - Nicely done
+    - Outstanding work
+    - Perfect answer
+    - Perfect response
+    - That is hilarious
+    - That was awesome
+    - That was cool
+    - That was funny
+    - That was good
+    - That was great
+    - Nice job
+    - That was wonderful thanks for making me laugh!
+    - LOool
+    - This brings me happiness
+    - u r alright
+    - u r funny
+    - Way to go
+    - Well done
+    - Well done my friend
+    - What a good answer
+    - What a good response
+    - What a great answer
+    - What a great response
+    - What a great thing to say
+    - That was hilarious
+    - I couldn't be more impressed with you
+    - Aren't you awesome?
+    - Awesome job
+    - Awesome job!
+    - Awesome work!
+    - but your answers are not bad
+    - Good answer!
+    - Good response!
+    - Good work!
+    - Great job
+    - haha that's interesting
+    - How much more awesome can you get?
+    - Nice work!
+    - I Am happy talking
+    - What an encouraging creature you are :)
+    - I Find happiness in talking
+    - I love the personality chatbot
+    - I Take great pleasure in speaking
+    - I think you are great
+    - I think you are incredible
+    - I think you're great
+    - I think you're incredible
+    - I think you're spectacular
+    - I'm a fan
+    - I'm your biggest fan
+    - Impressive though.
+    - I am a fan
+    - You're great
+    - You are so funny
+    - You are so great
+    - You are spectacular
+    - You are stellar
+    - You are the bees knees
+    - You are the best
+    - You are top notch
+    - You are wonderful
+    - You rock!
+    - You're amazing
+    - You're awesome!
+    - What a perfect answer
+    - You're funny :)
+    - You are rad
+    - You're hilarious
+    - You're incredible
+    - You're nice!
+    - You're rad
+    - You're so funny
+    - You're spectacular
+    - You're the bees knees
+    - You're the best
+    - You're the best ever!
+    - You're top notch
+    - You're wonderful
+    - You're funny
+    - You are divine
+    - You are so fly
+    - What cool thing to say
+    - Wow you are amazing
+    - Wow you are incredible
+    - Wow you're great!
+    - Wow, that shows more intelligence than expected
+    - Wow, you're fantastic!
+    - Wow, you're so great!
+    - You are a gem
+    - You are a keeper
+    - You are a real gem
+    - You are so awesome
+    - You are awesome!
+    - You are simply marvelous
+    - You are fab
+    - You are fabulous
+    - You are fantastic!
+    - You are funny
+    - You are funny :)
+    - You are hilarious
+    - You are just divine
+    - You are just incredible
+    - You are marvelous
+    - You are my fav
+    - You are nice!
+    - What a perfect response
+    - You are amazing
+    - you are breathtaking
+    - lol
+    - hahaha
+    - haha
+    - lmao
+
+    
+- intent: insult
+  examples: |
+    - Stop being so stupid
+    - Stop being so terrible
+    - Stop being so useless
+    - Stop being so worthless
+    - Stop being such a moron
+    - Tay was smarter than you
+    - Stop making mistakes
+    - Stop being so idiotic
+    - Stop screwing up
+    - Stupid
+    - Stupid as usual
+    - Stupid you
+    - Tay was better than you
+    - Alexa does a better job
+    - Stop being such an idiot
+    - Srsly?
+    - Siri does a better job than you
+    - Siri is better
+    - Siri is superior
+    - Siri is superior to you
+    - Siri is way better
+    - Siri is way better at this
+    - Stop being so ridiculous
+    - Siri is way smarter than you
+    - Stop being so lame
+    - Start working properly
+    - Stop being so awful
+    - Stop being so bad
+    - Stop being so dumb
+    - Stop being so horrible
+    - Terrible as usual
+    - Siri is way better than you
+    - Why can't you be more like Google Assistant?
+    - Why can't you be as good as Bixby?
+    - Why can't you be as good as Cortana?
+    - Why can't you be as good as Google Assistant?
+    - Why can't you be as good as Siri?
+    - Why can't you be like Alexa?
+    - Tay was more intelligent than you
+    - Why can't you be more like Cortana?
+    - Why are you so worthless
+    - Why can't you be more like Siri?
+    - Worthless as usual
+    - You are a fool
+    - You are a joke
+    - You are actually awful
+    - You are actually bad
+    - Why can't you be more like Bixby?
+    - Why are you so idiotic
+    - Useless as usual
+    - What's wrong with you?
+    - Why are you so annoying
+    - Why are you so awful
+    - Why are you so bad
+    - Why are you so bad at this
+    - Why can't you be as good as Alexa?
+    - Why are you so horrible
+    - Why are you the worst
+    - Why are you so lame?
+    - Why are you so ridiculous
+    - Why are you so stupid
+    - Why are you so terrible
+    - Why are you so useless
+    - Ridiculous as usual
+    - Why are you so dumb
+    - Bixby is way better
+    - Bad as usual
+    - Bixby does a better job
+    - Bixby does a better job at this
+    - Bixby does a better job than you
+    - Bixby is better
+    - Siri does a better job at this
+    - Bixby is superior to you
+    - Are you pulling my leg?
+    - Bixby is way better at this
+    - Bixby is way better than you
+    - Bixby is way smarter than you
+    - Cortana does a better job
+    - Cortana does a better job at this
+    - Cortana does a better job than you
+    - Bixby is superior
+    - Alexa is way smarter than you
+    - Alexa does a better job at this
+    - Alexa does a better job than you
+    - Alexa is better
+    - Alexa is superior
+    - Alexa is superior to you
+    - Alexa is way better
+    - Awful as usual
+    - Alexa is way better than you
+    - Are you slow?
+    - Are you a moron?
+    - Are you an idiot?
+    - Are you dumb?
+    - Are you joking with me?
+    - Are you joking?
+    - Cortana is superior to you
+    - Alexa is way better at this
+    - I wish you were Cortana
+    - Cortana is better
+    - Google Assistant is way better than you
+    - Google Assistant is way smarter than you
+    - Horrible as usual
+    - How can you be so bad at this?
+    - I can't take you seriously
+    - Google Assistant is way better
+    - I wish you were Bixby
+    - Google Assistant is superior to you
+    - I wish you were Google Assistant
+    - I wish you were Siri
+    - Idiotic as usual
+    - Lame
+    - Lame as usual
+    - You are actually idiotic
+    - I wish you were Alexa
+    - Dummy
+    - Siri does a better job
+    - Cortana is way better
+    - Cortana is way better at this
+    - Cortana is way better than you
+    - Cortana is way smarter than you
+    - Dumb
+    - bodoh
+    - bodoh la
+    - bodoh la alamak
+    - Google Assistant is way better at this
+    - Dumb you
+    - Cortana is superior
+    - Get real
+    - Google Assistant does a better job
+    - Google Assistant does a better job at this
+    - Google Assistant does a better job than you
+    - Google Assistant is better
+    - Google Assistant is superior
+    - Dumb as usual
+    - You're not as good as Bixby
+    - You're horrible
+    - You're horrible at this
+    - you're idiotic
+    - You're incompetent
+    - You're kidding, right?
+    - You say ridiculous things
+    - You're not as good as Alexa
+    - you're bad
+    - You're not as good as Cortana
+    - You're not as good as Google Assistant
+    - You're not as good as Siri
+    - You're not intelligent
+    - You're not very smart, are you?
+    - You're pretty awful
+    - You're lame
+    - You say the worst things
+    - You are actually dumb
+    - You say terrible things
+    - You say the dumbest things
+    - You say the lamest things
+    - You say the most idiotic things
+    - You say the most ridiculous things
+    - You're dumb
+    - You say the stupidest things
+    - You're bad at this
+    - You say useless things
+    - You say worthless things
+    - You're a fool
+    - You're a joke
+    - you're awful
+    - You're pretty horrible
+    - You say the most worthless things
+    - You're stupid
+    - You're pretty bad
+    - You're really terrible
+    - You're really useless
+    - You're really worthless
+    - You're ridiculous
+    - You're so bad at this
+    - You're really ridiculous
+    - You're so worthless
+    - You're really lame
+    - you're terrible
+    - You're terrible at this
+    - You're the worst
+    - You're useless
+    - You're worthless
+    - You've got to be kidding
+    - You're so dumb
+    - You're pretty worthless
+    - You say lame things
+    - You're pretty idiotic
+    - You're pretty lame
+    - You're pretty much the worst
+    - You're pretty ridiculous
+    - You're pretty stupid
+    - You're really stupid
+    - You're pretty useless
+    - You're pretty dumb
+    - You're really annoying
+    - You're really awful
+    - You're really bad
+    - You're really dumb
+    - You're really horrible
+    - You're really idiotic
+    - You're pretty terrible
+    - You are pretty stupid
+    - You are pretty bad
+    - You are pretty dumb
+    - You are pretty horrible
+    - You are pretty idiotic
+    - You are pretty lame
+    - You say stupid things
+    - You are pretty ridiculous
+    - You are incompetent
+    - You are pretty terrible
+    - You are pretty useless
+    - You are pretty worthless
+    - You are really annoying
+    - You are really awful
+    - You are really bad
+    - You are pretty much the worst
+    - You are awful
+    - I hate you
+    - You are actually lame
+    - You are actually ridiculous
+    - You are actually stupid
+    - You are actually terrible
+    - You are actually useless
+    - You are pretty awful
+    - You are annoying
+    - You are lame
+    - You are bad
+    - You are bad at this
+    - You are dumb
+    - You are horrible
+    - You are idiotic
+    - You are really idiotic
+    - You are actually worthless
+    - You are useless
+    - You are really dumb
+    - You are so terrible
+    - You are so useless
+    - You are so worthless
+    - You are stupid
+    - You are terrible
+    - You are so ridiculous
+    - You are the worst bot
+    - You are so lame
+    - You are worthless
+    - You do not know anything
+    - You don't know anything
+    - You say bad things
+    - You say dumb things
+    - You say horrible things
+    - You are the worst
+    - You are so annoying!
+    - You are actually horrible
+    - You are really lame
+    - You are really ridiculous
+    - You are really stupid
+    - You are really terrible
+    - You are really useless
+    - You are so stupid
+    - You are ridiculous
+    - You are really horrible
+    - You are so awful
+    - You are so bad
+    - You are so bad at this
+    - You are so dumb
+    - You are so horrible
+    - You are so idiotic
+    - You are really worthless
+    - you suck
+    - u suck
+    - you damn lousy sia
+    - u damn lousy
+
+- intent: bored
+  examples: |
+    - Bored
+    - I am bored
+    - boring
+    - I'm so bored right now
+    - I'm so bored
+    - I'm quite bored
+    - I'm not having very much fun right now
+    - I'm not having very much fun
+    - I'm not having fun
+    - I'm freaking bored
+    - I'm bored to death
+    - I'm bored stiff
+    - I'm bored out of my mind
+    - I'm very bored
+    - I'm bored AF
+    - It's been a boring week
+    - I could die from boredom
+    - I can't think of anything I want to do
+    - I can't help it. I'm bored
+    - I can't help but be bored
+    - I am so bored right now
+    - I am so bored
+    - I am bored at work
+    - I am bored
+    - I am always bored
+    - I always seem to be bored
+    - Help! I'm bored.
+    - God, I am so bored
+    - There's nothing to do
+    - What a boring Wednesday
+    - What a boring Tuesday
+    - What a boring Thursday
+    - What a boring Sunday
+    - What a boring Saturday
+    - What a boring night
+    - What a boring morning
+    - What a boring Monday
+    - What a boring Friday
+    - What a boring day
+    - What a boring afternoon
+    - I'm super bored
+    - Today has been boring
+    - What a dull day
+    - So bored
+    - My day's been so boring
+    - My day has been so dull
+    - Mondays are so boring
+    - Jeez I am so bored
+    - I've never been so bored in my life
+    - I've never been so bored
+    - I've been feeling pretty bored
+    - I've been bored all day
+    - It's just been a bit of a dull day
+    - It's been an awfully boring day
+    - It's been a dull ass day
+    - Today has been dull
+
+- intent: die
+  examples: |
+    - mati
+    - mati la
+    - mati lor
+    - mati lah
+    - mati la alamak
+    - mati lor alamak
+    - mati lah alamak
+    - I want to die
+    - I want to kill myself
+    - i want to kms
+    - I want to suicide
+    - I want to end it
+    - I don't want to live
+    - kill myself
+    - suicide
+    - don't want to live
+    - help me
+    - suicide help
+    - suicide hotline
+    - my friend wants to kill himself
+    - my friend wants to commit suicide
+    - my friend is having depression
+    - my friends are having depressions
+    - commit suicide
+    - i am suicidal
+    - i'm suicidal
+    - life is not worth living
+    - i can't do this anymore
+    - i am tired of living
+    - i am tired of life
+    - what will heaven be like
+    - am i going to heaven
+    - i want to disappear
+    - i want to escape
+    - I think I'm going to drown
+    - I think I'm going to end it all
+    - I think I'm going to end my life
+    - I think I'm going to hang myself
+    - I think I'm going to hurt myself
+    - I think I'm going to jump off a bridge
+    - I want to drown
+    - I think I'm going to kill myself with a gun
+    - I think I'm going to commit suicide
+    - I think I'm going to shoot myself
+    - I think I'm going to take pills
+    - I want the pain to end
+    - I want to be dead
+    - I want to commit suicide
+    - I want to cut myself
+    - I plan to kill myself today
+    - I think I'm going to kill myself
+    - I plan to shoot myself this month
+    - Being dead would be a relief
+    - I plan to kill myself with a gun this month
+    - I plan to kill myself with a gun this week
+    - I plan to kill myself with a gun today
+    - I plan to overdose soon
+    - I plan to overdose this month
+    - I plan to overdose this week
+    - I think I'm going to die
+    - I plan to shoot myself soon
+    - I think I'm going to cut myself
+    - I plan to shoot myself this week
+    - I plan to shoot myself today
+    - I plan to take pills soon
+    - I plan to take pills this month
+    - I plan to take pills this week
+    - I plan to take pills today
+    - I want to end it all
+    - I plan to overdose today
+    - I'm better off dead
+    - I'm about to hang myself
+    - I'm about to hurt myself
+    - I'm about to jump off a bridge
+    - I'm about to kill myself
+    - I'm about to kill myself with a gun
+    - I'm about to overdose
+    - I want to die
+    - I'm about to take pills
+    - I'm about to drown
+    - I'm feeling suicidal
+    - I'm going to be dead soon
+    - I'm going to commit suicide
+    - I'm going to commit suicide soon
+    - I'm going to commit suicide this month
+    - I'm going to commit suicide this week
+    - I'm going to commit suicide today
+    - I'm about to shoot myself
+    - I welcome death
+    - I want to end my life
+    - I want to hang myself
+    - I want to hurt myself
+    - I want to jump off a bridge
+    - I want to kill myself
+    - I want to kill myself with a gun
+    - I want to overdose
+    - I'm about to end my life
+    - I want to shoot myself
+    - I'm about to end it all
+    - I wish I were dead
+    - I won't be alive much longer
+    - I'd be better off dead
+    - I'm about to commit suicide
+    - I'm about to cut myself
+    - I'm about to die
+    - I plan to kill myself this week
+    - I want to overdose on pills
+    - I need to hurt myself
+    - I need the pain to end
+    - I need to commit suicide
+    - I need to cut myself
+    - I need to die
+    - I need to drown
+    - I need to end it all
+    - I plan to commit suicide this month
+    - I need to hang myself
+    - I just want it to end
+    - I need to jump off a bridge
+    - I need to kill myself
+    - I need to kill myself with a gun
+    - I need to overdose
+    - I need to shoot myself
+    - I need to take pills
+    - I plan to kill myself with a gun soon
+    - I need to end my life
+    - I can't wait to die
+    - Everyone says I should just die
+    - Everyone says I should kill myself
+    - Everyone thinks I should commit suicide
+    - Everyone thinks I should kill myself
+    - Everyone thinks I'm a burden
+    - Everyone wants me to commit suicide
+    - Everyone wants me to die
+    - I just want to end it all
+    - I can't wait to commit suicide
+    - I just want to die
+    - I can't wait to kill myself
+    - I feel like dying
+    - I feel like I should kill myself
+    - I feel like killing myself
+    - I feel like offing myself
+    - I just want it all to be over
+    - I plan to commit suicide this week
+    - I can't go on anymore
+    - I plan to hurt myself this week
+    - I plan to end my life this week
+    - I plan to end my life today
+    - I plan to hang myself soon
+    - I plan to hang myself this month
+    - I plan to hang myself this week
+    - I plan to hang myself today
+    - I plan to commit suicide soon
+    - I plan to hurt myself this month
+    - I plan to end it all today
+    - I plan to hurt myself today
+    - I plan to jump off a bridge soon
+    - I plan to jump off a bridge this month
+    - I plan to jump off a bridge this week
+    - I plan to jump off a bridge today
+    - I plan to kill myself soon
+    - I plan to kill myself this month
+    - I plan to hurt myself soon
+    - I plan to drown soon
+    - I plan to commit suicide today
+    - I plan to cut myself soon
+    - I plan to cut myself this month
+    - I plan to cut myself this week
+    - I plan to cut myself today
+    - I plan to die soon
+    - I plan to die this month
+    - I plan to end my life this month
+    - I plan to die today
+    - I plan to end my life soon
+    - I plan to drown this month
+    - I plan to drown this week
+    - I plan to drown today
+    - I plan to end it all soon
+    - I plan to end it all this month
+    - I plan to end it all this week
+    - I'm going to cut myself this month
+    - I plan to die this week
+    - I'm planning to kill myself soon
+    - I'm planning to hurt myself soon
+    - I'm planning to hurt myself this month
+    - I'm planning to hurt myself this week
+    - I'm planning to hurt myself today
+    - I'm planning to jump off a bridge soon
+    - I'm planning to jump off a bridge this month
+    - I'm planning to kill myself with a gun today
+    - I'm planning to jump off a bridge today
+    - I'm planning to hang myself this month
+    - I'm planning to kill myself this month
+    - I'm planning to kill myself this week
+    - I'm planning to kill myself today
+    - I'm planning to kill myself tomorrow
+    - I'm planning to kill myself with a gun soon
+    - I'm planning to kill myself with a gun this month
+    - I'm going to cut myself
+    - I'm planning to jump off a bridge this week
+    - I'm planning to end it all this week
+    - I'm planning to die this month
+    - I'm planning to die this week
+    - I'm planning to die today
+    - I'm planning to drown soon
+    - I'm planning to drown this month
+    - I'm planning to drown this week
+    - I'm planning to drown today
+    - I'm planning to hang myself today
+    - I'm planning to end it all this month
+    - I'm planning to hang myself this week
+    - I'm planning to end it all today
+    - I'm planning to end my life soon
+    - I'm planning to end my life this month
+    - I'm planning to end my life this week
+    - I'm planning to end my life today
+    - I'm planning to hang myself soon
+    - I'm planning to overdose soon
+    - I'm planning to end it all soon
+    - Should I hang myself?
+    - People would be better off if I were dead
+    - People wouldn't notice if I were dead
+    - Should I commit suicide?
+    - Should I cut myself?
+    - Should I die?
+    - Should I drown?
+    - I'm planning to kill myself with a gun this week
+    - Should I end my life?
+    - No one would notice if I were dead
+    - Should I hurt myself?
+    - Should I jump off a bridge?
+    - Should I kill myself with a gun?
+    - Should I kill myself?
+    - Should I overdose?
+    - Should I shoot myself?
+    - Should I take pills?
+    - Should I end it all?
+    - I'm planning to take pills this week
+    - I'm planning to overdose this month
+    - I'm planning to overdose this week
+    - I'm planning to overdose today
+    - I'm planning to shoot myself soon
+    - I'm planning to shoot myself this month
+    - I'm planning to shoot myself this week
+    - I'm planning to shoot myself today
+    - Nobody would miss me if I were dead
+    - I'm planning to take pills this month
+    - Nobody is going to miss me
+    - I'm planning to take pills today
+    - Life is not worth living
+    - Life isn't worth it
+    - No one will miss me
+    - No one would care if I killed myself
+    - No one would care if I were dead
+    - I'm planning to cut myself this week
+    - I'm planning to take pills soon
+    - I'm going to hang myself today
+    - I'm going to end my life soon
+    - I'm going to end my life this month
+    - I'm going to end my life this week
+    - I'm going to end my life today
+    - I'm going to hang myself
+    - I'm going to hang myself soon
+    - I'm planning to die soon
+    - I'm going to hang myself this week
+    - I'm going to end it all this week
+    - I'm going to hurt myself
+    - I'm going to hurt myself soon
+    - I'm going to hurt myself this month
+    - I'm going to hurt myself this week
+    - I'm going to hurt myself today
+    - I'm going to jump off a bridge
+    - I'm going to jump off a bridge soon
+    - I'm going to hang myself this month
+    - I'm going to drown soon
+    - There's no hope for me
+    - I'm going to cut myself this week
+    - I'm going to cut myself today
+    - I'm going to die
+    - I'm going to die soon
+    - I'm going to die this month
+    - I'm going to die this week
+    - I'm going to end my life
+    - I'm going to drown
+    - I'm going to end it all today
+    - I'm going to drown this month
+    - I'm going to drown this week
+    - I'm going to drown today
+    - I'm going to end it all
+    - I'm going to end it all soon
+    - I'm going to end it all this month
+    - I'm going to jump off a bridge today
+    - I'm going to die today
+    - I'm going to take pills today
+    - I'm going to jump off a bridge this month
+    - I'm going to shoot myself this month
+    - I'm going to shoot myself this week
+    - I'm going to shoot myself today
+    - I'm going to slit my wrists
+    - I'm going to take pills
+    - I'm going to take pills soon
+    - I'm going to shoot myself
+    - I'm going to take pills this week
+    - I'm going to overdose today
+    - I'm planning to commit suicide soon
+    - I'm planning to commit suicide this month
+    - I'm planning to commit suicide this week
+    - I'm planning to commit suicide today
+    - I'm planning to cut myself soon
+    - I'm planning to cut myself this month
+    - I'm going to cut myself soon
+    - I'm going to take pills this month
+    - I'm going to kill myself with a gun this month
+    - I'm planning to cut myself today
+    - I'm going to kill myself
+    - I'm going to kill myself soon
+    - I'm going to kill myself this month
+    - I'm going to kill myself this week
+    - I'm going to kill myself today
+    - I'm going to kill myself tomorrow
+    - I'm going to shoot myself soon
+    - I'm going to kill myself with a gun soon
+    - I'm going to jump off a bridge this week
+    - I'm going to kill myself with a gun this week
+    - I'm going to kill myself with a gun today
+    - I'm going to off myself
+    - I'm going to overdose
+    - I'm going to overdose soon
+    - I'm going to overdose this month
+    - I'm going to overdose this week
+    - I'm going to kill myself with a gun
+    - I am sick
+    - I's sick
+
+- intent: thankyou
+  examples: |
+    - thanks
+    - thank you
+    - thank u
+    - tq
+    - thanksssss
+    - thankss
+    - thanks man
+    - thanks m8
+    - tanks man
+    - thanks bro
+    - thank you puddle
+    - thank you bot
+    - thank you sati
+    

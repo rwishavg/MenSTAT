@@ -1,0 +1,258 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+
+- story: sample Q path
+  steps:
+  - user: |
+      hello there
+    intent: start
+  - action: utter_start
+  - user: |
+      what should i ask
+    intent: sample_questions
+  - action: utter_sample_questions
+
+- story: quiz_children_too_young path
+  steps:
+  - user: |
+      can kids have mental problems?
+    intent: quiz_children_too_young
+  - action: utter_children
+  
+- story: quiz_common_mental_health_issues
+  steps:
+  - user: |
+      common mental health issues?
+    intent: quiz_common_mental_health_issues
+  - action: utter_common_MH_issues
+  
+- story: quiz_how_many_suicides
+  steps:
+  - user: |
+      what is the suicide rate in singapore
+    intent: quiz_how_many_suicides
+  - action: utter_numberOfSuicides
+
+- story: what_is_mental_health
+  steps:
+  - user: |
+      what is mental health
+    intent: what_is_mental_health
+  - action: utter_whatIsMH
+
+- story: how_to_acheive_good_mental_health
+  steps:
+  - user: |
+      how to acheive good mental health
+    intent: how_to_acheive_good_mental_health
+  - action: utter_howToMH
+
+
+- story: stressed path yes
+  steps:
+  - user: |
+      im quite stressed
+    intent: stressed
+  - action: utter_stressedMain
+  - user: |
+      yeah sure
+    intent: affirm
+  - action: utter_stressedTips
+
+- story: stressed path no
+  steps:
+  - user: |
+      im quite stressed
+    intent: stressed
+  - action: utter_stressedMain
+  - user: |
+      no thanks
+    intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: insomnia path yes
+  steps:
+  - user: |
+      im cant sleep sia
+    intent: insomnia
+  - action: utter_insomniaMain
+  - user: |
+      okie
+    intent: affirm
+  - action: utter_insomniaTips
+  
+- story: insomnia path no
+  steps:
+  - user: |
+      im cant sleep at night man
+    intent: insomnia
+  - action: utter_insomniaMain
+  - user: |
+      nah
+    intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: insomnia tips path
+  steps:
+  - user: |
+      any tips for insomnia?
+    intent: insomnia_tips
+  - action: utter_insomniaTips
+  
+- story: relax path yes
+  steps:
+  - user: |
+      i need to relax man
+    intent: relax
+  - action: utter_relaxMain
+  - user: |
+      sure
+    intent: affirm
+  - action: utter_relaxTips
+  
+- story: relax path no
+  steps:
+  - user: |
+      i need to relax man
+    intent: relax
+  - action: utter_relaxMain
+  - user: |
+      dont
+    intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: relax tips path
+  steps:
+  - user: |
+      any tips to relax?
+    intent: relax_tips
+  - action: utter_relaxTips
+  
+- story: survey
+  steps:
+  - user: |
+      show me the survey
+    intent: survey
+  - action: utter_survey
+  
+  
+- story: do_something
+  steps:
+  - user: |
+      clean my room
+    intent: do_something
+  - action: utter_doSomething
+
+- story: ask_happy
+  steps:
+  - user: |
+      are you happy?
+    intent: ask_happy
+  - action: utter_happy
+  
+- story: ask_food
+  steps:
+  - user: |
+      do you eat food
+    intent: ask_food
+  - action: utter_food
+  
+- story: ask_likes
+  steps:
+  - user: |
+      do you like pizza
+    intent: ask_likes
+  - action: utter_likes
+  
+- story: competitors
+  steps:
+  - user: |
+      are you friends with siri?
+    intent: competitors
+  - action: utter_competitors
+  
+- story: ask_smart
+  steps:
+  - user: |
+      you are so smart ah
+    intent: ask_smart
+  - action: utter_smart
+  
+- story: ask_repeat
+  steps:
+  - user: |
+      why u keep repeating urself
+    intent: ask_repeat
+  - action: utter_repeat
+
+- story: shut_up
+  steps:
+  - user: |
+      eh can you shut up
+    intent: shut_up
+  - action: utter_shutUp
+  
+- story: compliment
+  steps:
+  - user: |
+      you are so good
+    intent: compliment
+  - action: utter_compliment
+  
+- story: bored
+  steps:
+  - user: |
+      im damn bored man
+    intent: bored
+  - action: utter_bored
+
+- story: insult
+  steps:
+  - user: |
+      you are so lousy
+    intent: insult
+  - action: utter_insult
+  
+- story: die
+  steps:
+  - user: |
+      i want to kms
+    intent: die
+  - action: utter_SOS
+
+- story: say hi
+  steps:
+  - user: |
+      yo wassup
+    intent: start
+  - action: utter_start
+
+- story: say goodbye
+  steps:
+  - user: |
+      ok bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      is this a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: unforeseen path 1 (relax)
+  steps:
+  - user: |
+      i need to relax man
+    intent: relax
+  - action: utter_relaxMain
+  - user: |
+      why is the sky blue
+    intent: nlu_fallback
+  - action: utter_default

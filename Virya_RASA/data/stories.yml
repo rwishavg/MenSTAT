@@ -1,0 +1,164 @@
+version: "2.0"
+
+stories:
+
+- story: sample Q path
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: sample_questions
+  - action: utter_sample_questions
+
+- story: user thanks
+  steps:
+  - intent: thankyou
+  - action: utter_welcome
+  
+  
+- story: quiz_children_too_young path
+  steps:
+  - intent: quiz_children_too_young
+  - action: utter_children
+  
+- story: quiz_common_mental_health_issues
+  steps:
+  - intent: quiz_common_mental_health_issues
+  - action: utter_common_MH_issues
+  
+- story: quiz_how_many_suicides
+  steps:
+  - intent: quiz_how_many_suicides
+  - action: utter_numberOfSuicides
+
+- story: what_is_mental_health
+  steps:
+  - intent: what_is_mental_health
+  - action: utter_whatIsMH
+
+- story: how_to_acheive_good_mental_health
+  steps:
+  - intent: how_to_acheive_good_mental_health
+  - action: utter_howToMH
+
+- story: stressed path yes
+  steps:
+  - intent: stressed
+  - action: utter_stressedMain
+  - intent: affirm
+  - action: utter_stressedTips
+
+- story: stressed path no
+  steps:
+  - intent: stressed
+  - action: utter_stressedMain
+  - intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: insomnia path yes
+  steps:
+  - intent: insomnia
+  - action: utter_insomniaMain
+  - intent: affirm
+  - action: utter_insomniaTips
+  
+- story: insomnia path no
+  steps:
+  - intent: insomnia
+  - action: utter_insomniaMain
+  - intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: insomnia tips path
+  steps:
+  - intent: insomnia_tips
+  - action: utter_insomniaTips
+  
+- story: relax path yes
+  steps:
+  - intent: relax
+  - action: utter_relaxMain
+  - intent: affirm
+  - action: utter_relaxTips
+  
+- story: relax path no
+  steps:
+  - intent: relax
+  - action: utter_relaxMain
+  - intent: deny
+  - action: utter_acknowledge
+  - action: utter_whatElse
+
+- story: relax tips path
+  steps:
+  - intent: relax_tips
+  - action: utter_relaxTips
+  
+- story: survey
+  steps:
+  - intent: survey
+  - action: utter_survey
+  
+- story: do_something
+  steps:
+  - intent: do_something
+  - action: utter_doSomething
+
+- story: ask_happy
+  steps:
+  - intent: ask_happy
+  - action: utter_happy
+  
+- story: ask_food
+  steps:
+  - intent: ask_food
+  - action: utter_food
+  
+- story: ask_likes
+  steps:
+  - intent: ask_likes
+  - action: utter_likes
+  
+- story: competitors
+  steps:
+  - intent: competitors
+  - action: utter_competitors
+  
+- story: ask_smart
+  steps:
+  - intent: ask_smart
+  - action: utter_smart
+  
+- story: ask_repeat
+  steps:
+  - intent: ask_repeat
+  - action: utter_repeat
+
+- story: shut_up
+  steps:
+  - intent: shut_up
+  - action: utter_shutUp
+  
+- story: compliment
+  steps:
+  - intent: compliment
+  - action: utter_compliment
+  
+- story: bored
+  steps:
+  - intent: bored
+  - action: utter_bored
+
+- story: insult
+  steps:
+  - intent: insult
+  - action: utter_insult
+  
+- story: die
+  steps:
+  - intent: die
+  - action: utter_SOS
+
+  
+

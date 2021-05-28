@@ -1,0 +1,32 @@
+version: "2.0"
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- rule: Say hi anytime the user says hi
+  steps:
+  - intent: start
+  - action: utter_start
+  
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say company anytime the user challenges company
+  steps:
+  - intent: bot_challenge_company
+  - action: utter_company
+  
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Rule to map `die` intent to `utter_SOS` (automatic conversion)
+  steps:
+  - intent: die
+  - action: utter_SOS
+
