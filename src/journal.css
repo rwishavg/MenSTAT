@@ -12,8 +12,8 @@ body {
 }
 
 @keyframes example {
-  from {background-color:  #f6df92;}
-  to {background-color: rgb(246, 171, 161);}
+  from {background-color:  #f6e4a6;}
+  to {background-color: rgb(255, 199, 191);}
 }
 
 h2 {
