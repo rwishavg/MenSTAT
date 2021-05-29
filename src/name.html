@@ -2,49 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> SMILE</title>
-    <link rel="icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./name.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILE</title>
+    <link rel="stylesheet" href="./name.css">
 </head>
 
 <body>
-    <section class="glass">
-        <div class="games">
-            <div class="status">
-                <h1>
-                    HELLO :
-                </h1>
+    <div class="wrapper" style="position:relative;">
+        <div class="card">
+            <div class="content">
+                <h1>HELLO</h1>
+                <p>What's your name?</p>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-info" style="flex-direction: column;">
-                        <h1 style="width: max-content;">Whats your name?</h1>
+
+            <div class="form">
+                <div class="middle-form">
+                    <div class="inner-form">
                         <form method="POST" action="">
-                            <input type="text" id="username" name="username" placeholder="Name...">
+                            <input type="text" id="username" placeholder="Name..">
                         </form>
                     </div>
                 </div>
-
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-info" style="padding-left: 20%;">
-                            <a href="journal.html">
-                                <button onclick="storeName()" style="border-radius: 12px;" class="button">
-                                    <span>
-                                        NEXT
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    </section>
+                <a href="/src/journal.html">
+                    <button onclick="storeName()" style="border-radius: 12px;" class="button">
+                        <span>
+                            NEXT
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
