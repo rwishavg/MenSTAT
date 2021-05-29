@@ -8,7 +8,6 @@
     <title>Smile</title>
     <link rel="stylesheet" href="./journal.css">
 </head>
-
 <body>
     <div style="display: flex; flex-direction:row; justify-content: center;">
         <h2>Hello &nbsp </h2>
@@ -18,17 +17,17 @@
     <h2 style="margin-top: 0;">Tell Us About Your Day</h2>
     <p>You can tell me anything. Feel free to write all you like.</p>
     <div class="container">
-        <form method = "POST" action="">
+        <form>
             <div class="row">
                 <div class="col-75">
                     <textarea id="subject" name="jentry" placeholder="Write something.."
                         style="height:400px"></textarea>
                 </div>
             </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                </div>
         </form>
+        <div class="row">
+            <input type="submit" onclick="storeEntry()" value="Submit">
+        </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
