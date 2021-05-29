@@ -7,6 +7,11 @@
     width: initial;
     height: initial;
   }
+  .adj {
+    position: initial;
+    width: 80%;
+    height: initial;
+  }
   .section-2 .cover {
     background-position: -25vmin -10vmin;
   }
@@ -48,9 +53,9 @@
 /* screen size 375px */
 
 @media only screen and (max-width: 375px) {
-  .section-4 .card {
+  /* .section-4 .card {
     width: 18em;
-  }
+  } */
   .back{
     margin-top: -20%;
     width: 300px;
