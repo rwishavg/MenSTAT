@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./name.css" />
 </head>
 
-<body>
+<body >
     <section class="glass">
         <div class="games">
             <div class="status">
@@ -26,7 +26,7 @@
                     <div class="card-info" style="flex-direction: column;">
                         <h1 style="width: max-content;">Whats your name?</h1>
                         <form>
-                            <input type="text" name="search" placeholder="Name...">
+                            <input type="text" id="username" name="search" placeholder="Name...">
                         </form>
                     </div>
                 </div>
@@ -35,12 +35,13 @@
                     <div class="card">
                         <div class="card-info" style="padding-left: 20%;">
                             <a href="journal.html">
-                                <button style="border-radius: 12px;" class="button"><span>NEXT </span></button>
+                                <button onclick="storeName()" style="border-radius: 12px;" class="button"><span>NEXT </span></button>
+                            <script>cosnole.log(input);</script>
                             </a>
                         </div>
                     </div>
                 </div>
     </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>

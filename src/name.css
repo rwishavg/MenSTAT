@@ -1,7 +1,10 @@
 
 body {
-  width: 100px;
-  height: 100px;
+  /* display: flex;
+  justify-content: center; */
+  margin-left: 30%;
+  width: max-content;
+  height: max-content;
   background-color: #f3db8a; 
   animation-name: example;
   animation-duration: 10s;
@@ -54,7 +57,8 @@ h3 {
 
 
 .glass {
-  margin: 20px;
+  position: absolute;
+  margin: 0 auto;
   background: white;
   /* min-height: 80vh; */
   width: 60%;
@@ -67,10 +71,13 @@ h3 {
   z-index: 2;
   backdrop-filter: blur(2rem);
   display: flex;
-  height: max-content;
+  /* height: max-content; */
 }
 
 .games {
+  position: absolute;
+  display: flex;
+  justify-content: center;
   flex: 2;
 }
 
