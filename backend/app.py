@@ -1,6 +1,6 @@
 #from model.model import predict
 from os import name
-from flask import Flask, render_template,request,redirect,url_for,Response
+from flask import Flask, render_template,request,redirect,url_for,Response,session
 from datetime import date
 from flask_mysqldb import MySQL
 import yaml
@@ -10,6 +10,9 @@ import numpy as np
 import pickle
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential,load_model
+from flask_session import Session
+
+SESSION_TYPE = 'memcache'
 
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
@@ -26,11 +29,14 @@ def prediction(data):
 
     pred = model.predict(padded)
 
+    score = int(100*np.amax(pred))
+
     #print(class_names[np.argmax(pred)])
 
-    return(class_names[np.argmax(pred)])
+    return(class_names[np.argmax(pred)],score)
 
 app = Flask(__name__)
+sess = Session()
 
 db = yaml.safe_load(open('db.yaml'))
 app.config['MYSQL_HOST'] = db['mysql_host']
@@ -46,13 +52,6 @@ def index():
 
 @app.route('/user',methods=['GET','POST'])
 def index1():
-    if request.method=='POST':
-        userDetails = request.form
-        name = userDetails['username']
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO users(name) VALUES(%s)",(name,))
-        mysql.connection.commit()
-        cur.close()
     return render_template('name.html')
 
 @app.route('/journal',methods=['GET','POST'])
@@ -60,13 +59,23 @@ def index2():
     if request.method=='POST':
         journalEntry = request.form
         entry = journalEntry['jentry']
-        emo = prediction(entry)
+        name=journalEntry['name']
+        emo,senticnt = prediction(entry)
         print(emo)
         cur = mysql.connection.cursor()
-        cur.execute("UPDATE users SET sentiment = %s WHERE name = %s",(emo,name))
+        cur.execute("INSERT INTO users(name,sentiment,sentiscore,entrydate) VALUES(%s,%s,%s,NOW())",(name,emo,senticnt,))
+        #cur.execute ("UPDATE users SET sentiment=%s, sentiscore=%s, entrydate=NOW() WHERE name=%s", (emo, senticnt, name))
         mysql.connection.commit()
         cur.close()
     return render_template('journal.html')
 
+@app.route('/graph',methods=['GET','POST'])
+def index3():
+    return render_template('graph.html')
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.secret_key = 'super secret key'
+    app.config['SESSION_TYPE'] = 'filesystem'
+    sess.init_app(app)
+    app.debug = True
+    app.run()

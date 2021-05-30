@@ -1,20 +1,23 @@
-* {
-  box-sizing: border-box;
-}
-
 
 body {
+  width: max-content;
+  height: max-content;
   background-color: #f3db8a; 
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  from {background-color:  #f6e4a6;}
-  to {background-color: rgb(255, 199, 191);}
+  from {background-color:  #e6dab4;}
+  to {background-color: rgb(228, 188, 183);}
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 h2 {
   margin-top: 5%;
@@ -38,62 +41,63 @@ p {
   opacity: 0.8;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   margin: 50px;
+
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.recc{
+  margin: 0 auto;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* button */
+.button {
+  border-radius: 4px;
+  background-color: #e0842e;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-  p {
-    margin: 0 auto;
-  }
   .container
   {
     margin: 20px;

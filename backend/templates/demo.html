@@ -1,4 +1,23 @@
-<form method="POST" action="">
-    Name<input type="text" name="name" />
+<form>
+    Name<input type="text" name="username" id="username"/>
     <input type="submit">
 </form>
+<script>
+    function storeName() {
+    console.log("hit");
+    var input = document.getElementById("username").value;
+    localStorage.setItem("uname", input);
+    // alert(input)
+    const URL = '/journal'
+    const xhr = new XMLHttpRequest();
+    sender = input;
+    xhr.open('POST', URL);
+    xhr.send(sender);
+    // location.href = '/journal';
+}
+</script>
+<a href="/journal"> 
+        <span>
+            NEXT
+        </span>
+</a>
