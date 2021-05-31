@@ -7,7 +7,7 @@ function storeName() {
     sender = input;
     xhr.open('POST', URL);
     xhr.send(sender);
-    location.href = 'MenSTAT/src/journal.html';
+    location.href = '/journal.html';
 }
 document.getElementById("name").innerHTML = localStorage.getItem("uname");
 
@@ -15,5 +15,5 @@ function storeEntry() {
     var entry = document.getElementById("subject").value;
     localStorage.setItem("journal_entry", entry);
     // location.href = '/src/graph.html';
-    location.href = 'MenSTAT/src/graph.html';
+    location.href = '/graph.html';
 }
