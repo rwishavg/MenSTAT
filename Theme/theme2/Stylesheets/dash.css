@@ -1,0 +1,70 @@
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+}
+section{
+    height: 100vh;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:     auto;       
+    min-height: 100%;
+    margin:     0px auto;
+    padding:    0px auto;
+}
+h2{
+    font-family: sans-serif;
+}
+.element1{
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.element2{
+    position: absolute;
+    margin-top: 10%;
+    transform: translateX(-50%);
+    margin-left: 70%;
+}
+.design{
+    height: 400px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 3%;
+    height: 40px;
+    width: 250px;
+    background-color: rgb(236, 236, 241);
+}
+
+.reccomendation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    height: 90%;
+    background-color: rgb(238, 236, 227);
+}
+h2{
+    font-family: sans-serif;
+}
+.heading{
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: sans-serif;
+}
+
+.chart{
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: rgb(226, 221, 222);
+    width: 70%;
+    min-height: 70%;
+}

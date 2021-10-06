@@ -1,0 +1,80 @@
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:     auto;       
+    min-height: 100%;
+    margin:     0px auto;
+    padding:    0px auto;
+}
+h2{
+    font-family: sans-serif;
+}
+.element1{
+    height: 50%;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.element2{
+    position: absolute;
+    margin-top: 15%;
+    transform: translateX(-50%);
+    margin-left: 75%;
+}
+
+/* .button{
+    background-color: #ADFFCE;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+
+
+/* button */
+.button {
+    border-radius: 4px;
+    background-color: #67b89d;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 350px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

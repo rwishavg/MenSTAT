@@ -1,0 +1,31 @@
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:     auto;       
+    min-height: 100%;
+    margin:     0px auto;
+    padding:    0px auto;
+}
+.element1{
+    height: 50%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.element2{
+    height: 60%;
+    width: 40%;
+    background-color: rgb(196, 196, 197);
+    position: absolute;
+    margin-top: 10%;
+    transform: translateX(-50%);
+    margin-left: 70%;
+}

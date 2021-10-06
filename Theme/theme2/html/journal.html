@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="../Stylesheets/journal.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div style="width: 65%;margin-top: 2%;margin-left: 5%;">
+            <div>
+                <h3>How was your day?</h3>
+            </div>
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-75">
+                            <textarea id="subject" name="jentry" placeholder="Write something.."
+                                style="height:400px"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <input type="submit" onclick="storeEntry()" value="Submit">
+                </div>
+            </div>
+        </div>
+        <div class="design">
+            <img  src="../Assets/Journal/undraw_a_moment_to_relax_bbpa 1.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
