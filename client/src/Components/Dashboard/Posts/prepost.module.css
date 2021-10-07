@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.cont {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+.btn {
+  font-family: "Nunito", sans-serif;
+  background: #ff6600;
+  outline: none;
+  padding: 9px;
+  color: white;
+  border: none;
+  font-weight: 400;
+  border-radius: 3px;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.wrapper {
+  background-color: white;
+  position: relative !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  margin: auto !important;
+  width: 80% !important;
+}
+.item {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  height: 360px;
+  width: 440px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  padding: 10px;
+}
+.clr {
+  color: rgb(12, 141, 130);
+}
+.clr1{
+  color: white;
+}
+.author1 {
+  margin: 24px 15px 10px 15px !important;
+  display: inline-block !important;
+  font-family: "Nunito", sans-serif !important;
+  cursor: pointer;
+}
+.author {
+  background-color: #007fff;
+  color: whitesmoke;
+  padding: 7px;
+  border-radius: 3px;
+  margin: 13px 0px 5px 15px;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  cursor: pointer;
+}
+
+.heading {
+  margin: 20px 15px 10px 15px !important;
+  font-size: 25px !important;
+  color: #003366 !important;
+  letter-spacing: 0.8px !important;
+}
+.paragraph {
+  margin: 20px 15px 10px 15px;
+  letter-spacing: 0.6px;
+  font-weight: lighter;
+  font-family: "Nunito", sans-serif;
+}
+.read {
+  margin: 20px 15px 5px 15px;
+  bottom: 40px;
+  padding: 10px;
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 300ms linear;
+  cursor: pointer;
+}
+.read:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  font-family: "Nunito", sans-serif !important;
+}
+.item-1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  height: 190px;
+  width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.05),
+    0px 15px 40px rgba(166, 173, 201, 0.2);
+  padding: 10px;
+}
+.clr {
+  color: white;
+}
+.clr1 {
+  color: rgb(12, 141, 130);
+}
+.author1 {
+  margin: 24px 15px 10px 15px !important;
+  display: inline-block !important;
+  font-family: "Nunito", sans-serif !important;
+  cursor: pointer;
+  
+}
+.author {
+  background-color: #007fff;
+  color: whitesmoke;
+  padding: 7px;
+  border-radius: 3px;
+  margin: 13px 0px 5px 15px;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  cursor: pointer;
+}
+.head {
+  margin: 20px 15px 10px 15px;
+  font-size: 25px;
+  color: #003366;
+  letter-spacing: 0.8px;
+}
+.read {
+  font-family: "Nunito", sans-serif;
+  margin: 20px 15px 5px 15px;
+  padding: 9px;
+  background-color: none;
+  border: none;
+  color: black;
+  border-radius: 2px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}

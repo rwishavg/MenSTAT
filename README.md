@@ -7,6 +7,7 @@
   </a>
   <p align="center">
     An Analytical and Interactive Approach
+    .
     <a href="https://github.com/rwishavg/MenSTAT/issues">Report Bug</a>
     ·
     <a href="https://github.com/rwishavg/MenSTAT/issues">Request Feature</a>

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+.navbar {
+  background: white;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 20;
+  font-family: "Nunito", sans-serif !important;
+}
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  height: 100%;
+  width: 80px;
+}
+.items {
+  position: absolute;
+  right: 10%;
+  height: 100%;
+  z-index: 10 !important;
+}
+.items li {
+  display: inline-block;
+  margin-right: 35px;
+  margin-top: 8px;
+  cursor: pointer;
+  z-index: 10 !important;
+  color: red;
+}
+.profilephoto {
+  position: absolute;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-size: contain;
+  top: 15px;
+  right: 3%;
+  padding: 5px;
+}
+.button {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 70%;
+  right: 10px;
+  top: 12px;
+}
+.button div:nth-child(1) {
+  top: 30%;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: orangered;
+}
+.button div:nth-child(2) {
+  top: 45%;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: orangered;
+}
+.button div:nth-child(3) {
+  top: 60%;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: orangered;
+}
+.button1 {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 70%;
+  right: 10px;
+  top: 12px;
+}
+.button1 div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 45%;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: orangered;
+}
+.button1 div:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 45%;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: orangered;
+}
+.logout {
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color:white;
+  background-color: orangered;
+}
+@media only screen and (min-width: 600px) {
+  .items {
+    display: inline-block !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button {
+    display: inline-block;
+  }
+  .button1 {
+    display: inline-block;
+  }
+  .items {
+    width: 100%;
+    right: 0px;
+    height: 300%;
+    text-align: center;
+    top: 90px;
+    display: none;
+    transition: display 300ms ease-in;
+  }
+  .items li {
+    display: block;
+  }
+  .profilephoto {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

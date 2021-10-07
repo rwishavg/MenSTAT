@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Signika Negative', sans-serif!important;
+    background:white;
+}
+.head{
+    text-align:center;margin-top:30px;
+}
+.iclass{
+    margin-right:8px;
+    color:#fb7813;
+}
+.profilepic{
+    width:300px;
+    height:300px;
+    position: absolute;
+    right:5%;
+    top:14%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/profile.svg');
+}
+.p-input{
+    display: none;
+}
+.photoview{
+    width:150px;
+    height:150px;
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+}
+.complete-profile{
+    position: relative;
+    margin-top:5%;
+    padding:50px;
+
+}
+.lbl{
+    width: 130px;
+    background: #fb7813;
+    color: white;
+    padding:10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.label1{
+    margin-top: 30px;
+    display: block;
+}
+.uni{
+    display: block;
+    width:50%;
+    border:2px solid #eeeeee;
+    box-shadow: 1px 2px 2px #cccccc;
+    padding:5px;
+}
+.lbl:active{
+    box-shadow: 2px 3px 5px black;
+}
+.role{
+    background:#fb7813;
+    color:white;
+    padding:5px;
+    border:none;
+    border-radius: 4px;
+}
+.submit-btn{
+    display: block;
+    position: absolute;
+    margin-top:40px;
+        background-image: linear-gradient(#ff9c71,#f37121);
+        border:none;
+        padding:10px;
+        text-transform: uppercase;
+        width:150px;
+        color:white;
+        font-family: 'Signika Negative', sans-serif;
+        font-weight: bolder;
+        border-radius:4px;
+        cursor: pointer;
+        outline: none;
+        transition: font-size 100ms ease-in;
+        box-shadow: 0px 7px 12px lightgrey;
+        margin-bottom:20px;
+}
+.cont{
+    margin-top:50px;
+}
+.err{
+    color:red;
+    font-weight: bold;
+}
+@media only screen and (max-width:1000px){
+    .profilepic{
+        display: none;
+    }
+    .uni{
+        width:70%;
+    }
+}
+@media only screen and (max-width:1000px){
+
+    .uni{
+        width:100%;
+    }
+}

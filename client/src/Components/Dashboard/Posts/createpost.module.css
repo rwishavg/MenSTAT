@@ -1,0 +1,54 @@
+.post-div {
+  width: 100%;
+}
+.heading {
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 1px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: block;
+}
+.instructions p:nth-child(1) {
+  color: red;
+}
+.instructions p:nth-child(2) {
+  color: green;
+}
+.instructions p:nth-child(3) {
+  color: blue;
+}
+.instructions p:nth-child(4) {
+  color: gold;
+}
+.instructions p:nth-child(5) {
+  color: grey;
+}
+.post {
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 80%;
+  display: block;
+  height: 200px;
+  padding: 10px;
+}
+.submit {
+  background: #0080ff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 1px;
+  margin-top: 10px;
+  float: left;
+  position: absolute;
+}
+.submit-div{
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin:auto;
+    position: relative;
+
+}

@@ -1,0 +1,149 @@
+.cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.prg {
+  position: relative;
+  width: 100%;
+}
+.step1 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+.step1::before {
+  content: "1";
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+  background: white;
+}
+.step2 {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 25%;
+}
+.step2::before {
+  content: "2";
+  border: 1px solid grey;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+  background: white;
+}
+.step3 {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+.step3::before {
+  content: "3";
+  border: 1px solid grey;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+  background: white;
+}
+.step4 {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+.step4::before {
+  content: "4";
+  border: 1px solid grey;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+  background: white;
+}
+.step1.back::before {
+  border: 2px solid red;
+  background: white;
+  color: red;
+}
+.step2.back::before {
+  border: 2px solid red;
+  background: white;
+  color: red;
+}
+.step3.back::before {
+  border: 2px solid red;
+  background: white;
+  color: red;
+}
+.step4.back::before {
+  border: 2px solid red;
+  background: white;
+  color: red;
+}
+.step1::after {
+  background-color: #438a5e;
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 50%;
+  left: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  top: 30%;
+  z-index: -1;
+}
+.step2::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 40%;
+  left: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  top: 30%;
+  z-index: -1;
+}
+.step3::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 40%;
+  left: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  top: 30%;
+  z-index: -1;
+}
+.step1.done::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 40%;
+  left: 50%;
+  top: 30%;
+  z-index: -1;
+  background-image: linear-gradient(#438a5e, red);
+}
+.step2.done::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 40%;
+  left: 50%;
+  top: 30%;
+  z-index: -1;
+  background-image: linear-gradient(#438a5e, red);
+}
+.step3.done::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 40%;
+  left: 50%;
+  top: 30%;
+  z-index: -1;
+  background-image: linear-gradient(#438a5e, red);
+}
