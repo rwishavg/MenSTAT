@@ -18,6 +18,7 @@ const connectDb = require("./utils/database");
 /*Bring the route files */
 const posts = require("./Routes/createEntry");
 
+const users = require("./Routes/users")
 /*Module to prevent no sql injection */
 const mongoSanitize = require("express-mongo-sanitize");
 
@@ -66,11 +67,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "Public")));
 
 /*Routes */
-app.use("/api/v1/", user);
-app.use("/api/v1/", profile);
+app.use("/api/v1/", users);
 app.use("/api/v1/", posts);
-
-
 
 //Serve static asset in production
 if (process.env.NODE_ENV === "production") {
